@@ -1,0 +1,13 @@
+a[href^="http"]{
+    color: #f70;
+}
+
+a[href*="google"]{
+    color: #666;
+}
+
+a[target="_blank"]::after{
+   content: ' \21F2';
+   position: absolute;
+   transform: rotate(-90deg);
+}

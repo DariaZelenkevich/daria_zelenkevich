@@ -1,0 +1,26 @@
+ul.inline_block_nav{
+    border: 1px solid red;
+    text-align: center;
+    background-color: pink;
+}
+
+.inline_block_nav li{
+    display: inline-block;
+    padding: 20px;
+    border: 0.5px solid black;
+}
+
+ul.floated_nav{
+    border: 1px solid black;
+    background-color: plum;
+
+}
+
+.floated_nav li{
+    float: left;
+    min-width: 25%;  
+    padding: 10px;
+    border: 0.5px solid aqua;
+    text-align: center; 
+}
+

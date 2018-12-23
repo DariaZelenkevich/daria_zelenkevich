@@ -1,0 +1,72 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.nav-menu_container {
+    position: relative;
+    background-color: #1aa4ff;
+}
+
+.nav-menu,
+.nav-submenu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-menu_item,
+.nav-sumenu_item {
+    display: inline-block;
+}
+
+.menu-link_view {
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.nav-menu_item_link {
+    font-family: 'Economica';
+    font-size: 20px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.submenu-wrapper{
+    position: absolute;
+    display: none;
+    width: 100%;
+    top: 100%;
+    right: 0;
+    left: 0;
+    background-color: #eee; 
+}
+
+.nav-submenu_item_link {
+    font-size: 15px;
+    font-weight: normal;
+    color: #a6a4a5;
+}
+
+.nav-menu_item_link:hover {
+    background-color: #eee;
+    color: #a6a4a5;
+}
+
+.nav-menu_item_link:hover + .submenu-wrapper {
+    display: block;
+}
+
+
+
+

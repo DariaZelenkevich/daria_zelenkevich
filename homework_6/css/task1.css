@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.centered {
+    margin: 0 auto;
+}
+
+.container {
+    position: relative;
+    max-width: 60%;
+    padding: 10px 20px;
+    font-family: Arial;
+    background-color: #1bbc9b;
+}
+
+.login_form_item {
+    float: left;
+}
+
+/* greeting_box */
+
+.greeting_box {
+    width: 30%;
+    padding: 0 10px;
+}
+
+.greeting_box_image {
+    display: block;
+    margin: 0 auto 10px auto;
+    max-width: 100%;
+    width: 50%;
+    height: 50%;
+}
+
+.greeting_box_text > span {
+    display: block;
+    color: #fdfdff;
+    letter-spacing: -0.65px;
+    text-align: center;
+}
+
+/* form*/
+
+.formwrap {
+    width: 70%;
+    padding: 20px;
+    background-color: #eeeff1;
+    border-radius: 5px; 
+}
+
+.log_name,
+.log_password {
+    display: block;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.log_name[placeholder],
+.log_password[placeholder] {
+    padding-left: 15px;
+    color: #bdc6cd;
+    letter-spacing: -0.65px;
+}
+
+.log_name:focus,
+.log_password:focus {
+    border: 2px solid #20b08d;
+}
+
+.log_name_pic::after {
+    position: absolute;
+    top: 18%;
+    right: 10%;  
+    content:"";
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: url('../img/user.svg') center no-repeat;
+    background-size: cover;
+}
+
+.log_password_pic::after {
+    position: absolute;
+    top: 37%;
+    right: 10%;  
+    content:"";
+    display: block;
+    width: 15px;
+    height: 15px;
+    background: url('../img/padlock.svg') center no-repeat;
+    background-size: cover;
+}
+
+.login_button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: -0.65px;
+    background-color: #20b08d;
+}
+
+.lost_password_link {
+    display: block;
+    padding-top: 20px;
+    text-decoration: none;
+    font-size: 10px;
+    color: #c8cdd1;
+    font-weight: bold;
+    text-align: center;
+}
+
+.formwrap_decoration {
+    position: absolute;
+    top: 18%;
+    left: 30%;
+    width: 15px;
+    height: 15px;
+    transform:  rotate(45deg);
+    background-color: #eeeff1;
+}

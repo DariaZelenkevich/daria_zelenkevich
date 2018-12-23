@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+
+.card_container {
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.uppercase_text{
+    text-transform: uppercase;
+}
+
+.card {
+    max-width: 300px;
+    border: 2px solid #ef812a;
+    border-radius: 5px;
+    box-shadow:  0 0 10px rgba(0,0,0,0.5);
+    font-family: Verdana;
+}
+
+.card_heading {
+    padding: 30px 20px;
+    background-color: #ef812a;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.card_bestoffers,
+.card-pluses,
+.card_button_wrapper {
+    padding: 10px 0;
+}
+
+.card_bestoffers_item {
+    color: #344555;
+    text-align: center;
+    font-size: 17px;
+}
+
+.card_price {
+    font-size: 50px;
+    line-height: 1;
+    font-weight: bolder;
+}
+
+.card-pluses {
+    list-style-type: none;
+}
+
+.card_plus {
+    font-size: 15px;
+    color: #98979c;
+}
+
+.card_plus:nth-of-type(odd) {
+    background-color: #eef5fb;
+}
+
+.card_plus:nth-of-type(even) {
+    background-color: #f5f5f7
+}
+
+.card_plus:not(:last-of-type) {
+    margin-bottom: 1px;
+}
+
+.card_plus::before {
+    content: '\2713';
+    margin-right: 5px; 
+    color: #96b823;
+}
+
+.card_button {
+    display: block;
+    width: 100%;
+    border: 1px solid #ef812a; 
+    border-radius: 5px;
+    box-shadow: inset 0px -1px 0.5px rgba(0,0,0,0.5);
+    background-color: #ef812a;
+    padding: 15px 10px;
+}
+
+.card_button_link{
+    text-decoration: none;
+    font-size: 10px;
+    line-height: 1;
+    color: #fff;
+}
+

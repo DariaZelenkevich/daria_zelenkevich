@@ -1,0 +1,11 @@
+body {
+    font: 14px/1.5 serif;
+}
+
+ul{
+     margin: 0;
+}
+
+li:not(:last-child){
+    margin-bottom: 1.5em;
+}

@@ -1,0 +1,300 @@
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+body {
+    position: relative;
+}
+
+/* start_form_button */
+
+.start_form_button {
+    display: block;
+    width: 20%;
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: -0.65px;
+    background-color: #20b08d;
+}
+
+.start_form_button_link {
+    color: #fff;
+    text-decoration: none;
+}
+
+#site_form:target {
+    opacity: 1;
+    pointer-events: auto; 
+}
+
+
+
+/* FORM CONTAINER*/
+
+.container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    width: 60%;
+    max-height: 100%;
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index:100; 
+    opacity:0;
+    pointer-events: none; 
+    overflow: auto;
+    font-family: Arial;
+    font-size: 14px;
+    letter-spacing: -0.65px;
+    background-color: #1bbc9b;
+}
+
+.greetting_page_item {
+    float: left;
+}
+
+/* __LOGO__ */
+
+.logo {
+    width: 30%;
+}
+
+.logo_picture {
+    display: block;
+    margin: 0 auto 10px auto;
+    width: 40%;
+    height: 40%;
+    max-width: 100%;
+}
+
+.logo_text {
+    font-weight: bold;
+    color: #fdfdff;
+    letter-spacing: -0.65px;
+    text-align: center;
+}
+
+
+/* __FORM__ */
+
+.form_wrap {
+    width: 70%;
+}
+
+.form {
+    margin: 0 auto;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #f5f8ff;
+}
+
+p {
+    margin: 20px 0 0;
+}
+
+/*~close_form_button~*/
+
+.close_form_button {
+    margin-bottom: 2px;
+    margin-left: 97%;
+    padding: 3px 4px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f5f8ff;
+}
+
+.close_form_button_icon {
+    width: 10px;
+    height: 10px;
+    fill: #20b08d;
+}
+
+/*~radio-checkbox~ & ~checkbox~*/
+
+.checkbox_status {
+    display: block;
+}
+
+.radio,
+.checkbox {
+	display: none;
+}
+
+.radio-custom,
+.checkbox_status-custom {
+    position: relative;
+    display: inline-block;
+	border: 2px solid #20b08d;
+}
+
+.radio-custom {
+	width: 7px;
+	height: 7px;
+	border-radius: 5px;
+}
+
+.checkbox_status-custom {
+	width: 10px;             
+    height: 10px;          
+    margin-right: 5px;
+	border-radius: 3px;
+}
+
+.radio:checked + .radio-custom::before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 2px;
+	right: 2px;
+	bottom: 2px;
+	left: 2px;
+	background: #20b08d;
+	border-radius: 2px;
+}
+
+.checkbox:checked + .checkbox_status-custom::before {
+	content: "\2713";            
+	display: block;			 
+	position: absolute;     
+	top: -3px;
+	right: -1px;
+    color: #20b08d;
+}
+
+/*~input~ & ~select~*/
+
+.input_wrap {
+    position: relative;
+}
+
+.input_label {
+    display: block;
+    margin: 20px 0 0;
+}
+
+.skills_and_technologies_select {
+    overflow: hidden;
+}
+
+.input_name,
+.input_email,
+.month_and_year_select {
+    height: 30px;
+}
+
+.input_name,
+.input_email,
+select,
+textarea {
+    border: 2px solid #f5f8ff;
+    outline: none;
+    border-radius: 5px;
+}
+
+.input_name,
+.input_email {
+    width: 100%;
+    padding: 0 5px;
+}
+
+.input_name_icon,
+.input_email_icon {
+    position: absolute;
+    top: 47%;
+    right: 10%;
+    height: 20px;
+    width: 30px;
+    fill: #bdc7c8;
+}
+
+.input_name:focus,
+.input_email:focus,
+select:focus,
+textarea:focus {
+    border: 2px solid #20b08d;
+}
+
+.input_name:focus ~ svg,
+.input_email:focus ~ svg {
+    fill: #20b08d;
+}
+
+
+/*~photo upload~ & ~save button~*/
+
+.photo_upload_wrap,
+.save_button {
+    width: 50%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: -0.65px;
+    background-color: #20b08d;
+}
+
+.photo_upload_wrap {
+    position: relative; 
+    overflow: hidden;
+    height: 15px;
+}
+
+.photo_upload_label {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.photo_upload_input {
+    display: none;
+}
+
+.photo_upload_text{
+    display: inline-block;
+    padding: 10px;
+}
+
+.save_button {
+    display: block;
+    border: none;
+    margin-top: 20px;
+}
+
+/* ~~~~~~~ */
+
+.form_decoration {
+    position: absolute;
+    top: 11%;
+    left: 30%;
+    width: 15px;
+    height: 15px;
+    transform:  rotate(45deg);
+    background-color: #f5f8ff;
+}
+
+@media (max-width: 767px) {
+    .input_label {
+        display: inline-block;
+        width: 20%;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+        width: 70%;
+    }
+}

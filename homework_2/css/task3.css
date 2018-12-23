@@ -1,0 +1,11 @@
+*{
+    box-sizing: border-box;
+}
+input{
+    margin: 0;
+}
+
+#placeholder{
+    color: red;
+    margin-top: -1.25em;
+}

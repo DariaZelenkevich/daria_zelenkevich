@@ -1,0 +1,39 @@
+input[type="checkbox"]{
+    display: none;
+}
+
+input[type="checkbox"]:not(:checked){
+    display: inline-block;
+}
+
+[id|="message"]{
+    font-style: italic;
+}
+
+[id^="message-"]{
+    font-weight: bold;
+}
+
+a[href$="zip"]{
+    color: green;
+}
+
+[data-action~="delete"]{
+    color: violet;
+}
+
+#messages li:nth-child(2n){
+    text-decoration: overline;
+}
+
+#widget-title + ul{
+    background-color: gray;
+}
+
+#widget-title ~ a{
+    font-weight: bolder;
+}
+
+#messages a{
+    color: aqua;
+}

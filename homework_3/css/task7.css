@@ -1,0 +1,51 @@
+ul.top_navigation{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    background-color: #777;
+}
+
+.top_navigation li{
+    float: left;
+}
+
+.top_navigation li > a{
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+.top_navigation li a.active{
+    background-color: #4CAF50;
+}
+
+.column{
+    border: 0.5px solid blue;
+}
+
+.content{
+    float: left;
+    width: 75%;
+    padding: 0 10px 20px 10px;
+}
+
+.heading h1{
+    padding: 20px;
+    border: 0.5px solid black;
+    text-align: center;
+    background-color: #2196F3;
+    color: white;
+}
+
+.sidemenu{
+    float: right;
+    width: 25%;
+    padding: 20px;
+}
+
+.footer{
+    background-color: #444;
+    color: white;
+    padding: 10px;
+}
