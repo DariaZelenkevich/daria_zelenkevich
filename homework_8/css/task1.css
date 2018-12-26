@@ -13,10 +13,14 @@
     src: url("../fonts/OpenSans-Regular.ttf");
 }
 
-@font-face {
+/* @font-face {
     font-family: "Font Awesome";
     src: url("../fonts/fontawesome-webfont.ttf");
-}
+} */
+
+/*
+~~~ COMMON CSS RULES~~~
+*/
 
 * {
     box-sizing: border-box;
@@ -27,4 +31,118 @@ body {
     padding: 0;
     font-family: "Open Sans";
     font-size: 13px;
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* section heading & heading-text */
+
+.heading,
+.heading-text {
+    text-align: center;
+}
+
+.heading {
+    font-family: "Gotham-Black";
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: -0.88px;
+}
+
+.heading-text {
+    margin-top: 3px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1;
+}
+
+.light-style {
+    color: #fff;
+}
+
+.dark-style {
+    color: #394b50;
+}
+
+/* page-button & page-button_link*/
+
+.page-button {
+    padding: 0;
+    display: inline-block;
+    border: none;
+    background-color: #ffbb42;
+}
+
+.page-button_link {
+    display: inline-block;
+    padding: 20px;
+    font-size: 10px;
+    line-height: 1;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+
+}
+
+/* client-form */
+
+.client-form {
+    color: #a9a9a9;
+}
+
+.client-form_item {
+    padding: 20px;
+    border: 1px solid #cbcbcb;
+    font-size: 10px;
+    line-height: 1;
+    /* box-shadow: 0.5px 0.5px 1px #a9a9a9; */
+}
+
+.client-form_item_name-pic,
+.client-form_item_email-pic,
+.client-form_item_phone-pic {
+    position: relative;
+}
+
+.fas {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+
+/* nav-menu */
+
+.nav-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-menu_item {
+    display: inline-block;
+
+}
+
+.nav-menu_item_link {
+    display: inline-block;
+    padding: 10px 20px;
+    font-family: "Lato";
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #868686;
 }
