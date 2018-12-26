@@ -1,0 +1,30 @@
+@font-face {
+    font-family: "Gotham-Black";
+    src: url("../fonts/Gotham-Black.ttf");
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Font Awesome";
+    src: url("../fonts/fontawesome-webfont.ttf");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans";
+    font-size: 13px;
+}
