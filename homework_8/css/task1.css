@@ -345,3 +345,40 @@ background-color: #e7edf3;
     border-top: 1px solid #8eb8e2;
 }
 
+/* how-it-works */
+
+.how-it-works {
+    padding: 155px 0 150px;
+}
+
+.how-it-works_wrapper {
+    padding: 110px 0 90px;
+}
+
+.step-card {
+    display: inline-block;
+    width: 24%;
+    padding: 0 3%;
+    text-align: center;
+}
+
+.step-card_heading {
+    padding: 100px 0 30px;
+    font-family: "Lato";
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1;
+    color: #394b50;
+    text-transform: uppercase;
+}
+
+.step-card_text {
+    color: #7b7b7b;
+}
+
+.how-it-works_button {
+    display: block;
+    width: 20%;
+    margin: 0 auto;
+    text-align: center;
+}
