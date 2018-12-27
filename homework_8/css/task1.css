@@ -241,7 +241,7 @@ body {
     padding: 165px 0 175px 80px;
 }
 
-.our-services_heading {
+.about-us_heading {
     text-align: left;
     margin-bottom: 30px;
 }
@@ -249,4 +249,14 @@ body {
 .about-us_text {
     font-weight: 400;
     color: #fff;
+    padding-bottom: 30px;
 }
+
+.about-us_button {
+    width: 30%;
+    border: 1px solid #e7ad48;
+    border-radius: 3px;
+    background-color: #ffc155;
+}
+
+
