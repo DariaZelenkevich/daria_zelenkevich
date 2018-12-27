@@ -13,10 +13,10 @@
     src: url("../fonts/OpenSans-Regular.ttf");
 }
 
-/* @font-face {
+@font-face {
     font-family: "Font Awesome";
-    src: url("../fonts/fontawesome-webfont.ttf");
-} */
+    src: url("../fonts/font-awesome-4.7.0/font-awesome-4.7.0/fonts/fontawesome-webfont.woff");
+} 
 
 /*
 ~~~ COMMON CSS RULES~~~
@@ -61,7 +61,7 @@ body {
 }
 
 .heading-text {
-    margin-top: 3px;
+    margin-top: 10px;
     font-size: 16px;
     font-weight: 300;
     line-height: 1;
@@ -181,4 +181,44 @@ body {
 .boost-up_form {
     padding: 30px 0 70px;
     text-align: center;
+}
+
+/* our-services */
+
+.our-services_section-wrapper {
+    padding: 100px 0 155px;
+}
+
+.our-services_list {
+    padding-top: 90px;
+}
+
+.our-services_list_item {
+    display: inline-block;
+    max-width: 49%;
+    margin-top: 75px;
+    padding-right: 90px;
+    vertical-align: top;
+}
+
+.our-services_list_item:nth-of-type(1),
+.our-services_list_item:nth-of-type(2) {
+    margin-top: 0;
+} 
+
+.our-services_list_item_icon {
+    max-width: 7%;
+}
+
+.our-services_list_item_wrapper {
+    padding-left: 40px;
+}
+
+.our-services_list_item_heading {
+    margin-bottom: 20px;
+    font-family: "Lato";
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 1;
+    text-transform: uppercase;
 }
