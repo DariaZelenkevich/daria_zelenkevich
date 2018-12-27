@@ -281,11 +281,14 @@ background-color: #e7edf3;
     display: inline-block;
     padding: 60px 30px 50px;
     border: 1px solid #ccd5df;
+    border-radius: 3px;
     font-family: "Lato";
     font-size: 14px;
     text-align: center;
     text-transform: uppercase;
     background-color: #fff;
+    vertical-align: middle;
+
 }
 
 .price-card_heading {
@@ -296,7 +299,7 @@ background-color: #e7edf3;
 }
 
 .price-card_price {
-    font-size: 40px;
+    font-size: 60px;
     font-weight: bold;
     color: #ffbb42;
 }
@@ -324,4 +327,21 @@ background-color: #e7edf3;
     width: 50%;
 }
 
+.best-offer-card {
+    width: 40%;
+    padding: 90px 0 80px;
+    background-color: #709dca;
+    border: none;
+}
+
+.best-offer-card > .price-card_heading,
+.best-offer-card > .price-card_price,
+.best-offer-card > .price-card_period {
+    color: #fff;
+}
+
+.best-offer-card > .price-card_description-list_item {
+    color: #c2e1ff;
+    border-top: 1px solid #8eb8e2;
+}
 
