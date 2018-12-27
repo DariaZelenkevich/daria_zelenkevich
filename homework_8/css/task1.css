@@ -222,3 +222,31 @@ body {
     line-height: 1;
     text-transform: uppercase;
 }
+
+/* about-us */
+.about-us {
+    background-color: #ffc155;
+}
+
+.about-us_image {
+    display: block;
+    max-width: 100%;
+    width: 50%;
+    float: left;
+}
+
+.about-us_wrapper {
+    display: inline-block;
+    width: 50%;
+    padding: 165px 0 175px 80px;
+}
+
+.our-services_heading {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.about-us_text {
+    font-weight: 400;
+    color: #fff;
+}
