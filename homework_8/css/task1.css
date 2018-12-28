@@ -18,6 +18,11 @@
     src: url("../fonts/font-awesome-4.7.0/font-awesome-4.7.0/fonts/fontawesome-webfont.woff");
 } 
 
+@font-face {
+    font-family: "Brandon Grotesque";
+    src: url("../fonts/BrandonGrotesque-Thin.ttf")
+}
+
 /*
 ~~~ COMMON CSS RULES~~~
 */
@@ -42,6 +47,13 @@ body {
     content: "";
     clear: both;
     display: block;
+}
+
+.puote-decoration {
+    display: inline-block;
+    font-family: "Brandon Grotesque";
+    font-size: 30px;
+    font-weight: 700;
 }
 
 /* section heading & heading-text */
@@ -430,5 +442,5 @@ background-color: #e7edf3;
 
 
 .happy-clients_testimonial_wrapper {
-    width: 69%;
+    width: 50%;
 }
