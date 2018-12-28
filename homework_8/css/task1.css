@@ -538,8 +538,8 @@ background-color: #e7edf3;
 }
 
 .newsletter_image {
-    width: 100%;
     max-width: 100%;
+    width: 100%;
 }
 
 /* page-footer */
