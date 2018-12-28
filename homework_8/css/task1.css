@@ -400,14 +400,16 @@ background-color: #e7edf3;
 
 .happy-clients_testimonials {
     padding-top: 60px;
+    font-size: 0;
 }
 
 .happy-clients_testimonial {
     display: inline-block;
-    max-width: 45%;
+    max-width: 48%;
     margin-top: 20px;
     padding: 45px 10px 50px 30px;
     vertical-align: top;
+    font-size: 13px;
     background-color: #fff;
 }
 
@@ -509,4 +511,16 @@ background-color: #e7edf3;
 
 .happy-clients_testimonial_author-post {
     color: #99a9ae;
+}
+
+/* newsletter */
+
+.newsletter_section-wrapper {
+    padding-top: 150px;
+}
+
+.newsletter_form {
+    padding-top: 40px;
+    width: 100%;
+    text-align: center;
 }
