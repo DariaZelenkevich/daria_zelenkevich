@@ -524,3 +524,8 @@ background-color: #e7edf3;
     width: 100%;
     text-align: center;
 }
+
+.newsletter_form_item,
+.newsletter-form_button {
+    width: 25%;
+}
