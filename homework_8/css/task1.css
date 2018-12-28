@@ -541,3 +541,33 @@ background-color: #e7edf3;
     width: 100%;
     max-width: 100%;
 }
+
+/* page-footer */
+
+.page-footer_wrapper {
+    border-top: 1px solid #e3e7ec;
+    padding-top: 70px;
+    text-align: center;
+}
+
+.page-footer-menu .nav-menu_item_link {
+    color: #394b50;
+}
+
+.page-footer_contacts {
+    padding: 30px 0 100px;
+}
+
+.page-footer_phone-number {
+    font-family: "Lato";
+    font-size: 17px;
+    line-height: 1;
+    color: #394b50;
+}
+
+.page-footer_disclamer {
+    padding: 20px 0;
+    line-height: 1;
+    color: #fff;
+    background-color: #709dca;
+}
