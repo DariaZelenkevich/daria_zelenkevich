@@ -520,12 +520,24 @@ background-color: #e7edf3;
 }
 
 .newsletter_form {
-    padding-top: 40px;
+    padding: 40px 0 50px;
     width: 100%;
     text-align: center;
 }
 
-.newsletter_form_item,
-.newsletter-form_button {
-    width: 25%;
+.newsletter_form_item-user {
+    width: 20%;
+}
+
+.newsletter_form_item-email {
+    width: 30%; 
+}
+
+ .newsletter-form_button {
+    width: 15%;
+}
+
+.newsletter_image {
+    width: 100%;
+    max-width: 100%;
 }
