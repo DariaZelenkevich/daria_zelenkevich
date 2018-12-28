@@ -382,3 +382,11 @@ background-color: #e7edf3;
     margin: 0 auto;
     text-align: center;
 }
+
+.happy-clients {
+    background-color: #ffc155;
+}
+
+.happy-clients_section-wrapper {
+    padding: 140px 0 160px;
+}
