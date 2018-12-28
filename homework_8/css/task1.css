@@ -383,10 +383,52 @@ background-color: #e7edf3;
     text-align: center;
 }
 
+/* happy-clients */
+
 .happy-clients {
     background-color: #ffc155;
 }
 
 .happy-clients_section-wrapper {
     padding: 140px 0 160px;
+}
+
+.happy-clients_testimonials {
+    padding-top: 60px;
+}
+
+.happy-clients_testimonial {
+    display: inline-block;
+    max-width: 45%;
+    padding: 40px 30px 50px;
+    background-color: #fff;
+    margin-top: 20px;
+}
+
+.happy-clients_testimonial:nth-of-type(odd) {
+    margin-right: 20px;
+}
+
+.happy-clients_testimonial:nth-of-type(even) {
+    margin-left: 20px;
+}
+
+.happy-clients_testimonial:nth-of-type(1),
+.happy-clients_testimonial:nth-of-type(2) {
+    margin-top: 0;
+}
+
+.happy-clients_avatar,
+.happy-clients_testimonial_wrapper {
+    display: inline-block;
+}
+
+.happy-clients_avatar {
+    width: 30%;
+    vertical-align: top;
+}
+
+
+.happy-clients_testimonial_wrapper {
+    width: 69%;
 }
