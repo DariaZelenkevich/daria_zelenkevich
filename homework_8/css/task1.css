@@ -600,7 +600,7 @@ background-color: #e7edf3;
 }
 
 .page-footer_contacts {
-    padding: 1.8vw 0 5.9vw;
+    padding: 1.8vw 0 2.9vw;
 }
 
 .page-footer_phone-number {
@@ -610,7 +610,23 @@ background-color: #e7edf3;
     color: #394b50;
 }
 
-.page-footer_disclamer {
+.page-footer_social-media {
+    display: block;
+    padding-top: 1.4vw;
+}
+
+.fa-page-footer_social-media {
+    display: inline-block;
+    padding: 0 .3vw;
+    font-size: 18px;
+    color: #709dca;
+}
+
+.first-media {
+    color: #ffc155;
+}
+
+.page-footer_copyright {
     padding: 1.2vw 0;
     line-height: 1;
     color: #fff;
