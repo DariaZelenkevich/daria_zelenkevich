@@ -188,7 +188,7 @@ body {
 }
 
 .boost-up_form {
-    padding: 1.8vw 0 4.1vw;
+    padding: 1.8vw 0 20.6vw;
     text-align: center;
 }
 
@@ -196,6 +196,24 @@ body {
 .boost-up_form_button {
     max-width: 20%;
     width: 20%;
+}
+
+.boost-up_slider-wrapper{
+    position: relative;
+    margin-top: 5.29vw;
+    background-color: #fff;
+}
+
+.boost-up_slider_block {
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.boost-up-slider_img {
+    width: 90%;
+    max-width: 100%;
 }
 
 /* our-services */
