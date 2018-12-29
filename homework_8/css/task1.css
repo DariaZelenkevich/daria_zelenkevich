@@ -150,6 +150,12 @@ body {
     color: #868686;
 }
 
+.active {
+    border-radius: 3px;
+    color: #fff;
+    background-color: #ffbb42;
+}
+
 /* 
 ~~~SECTIONS~~~
 */
