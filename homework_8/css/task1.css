@@ -373,7 +373,31 @@ background-color: #e7edf3;
 }
 
 .how-it-works_wrapper {
-    padding: 6.5vw 0 5.3vw;
+    position: relative;
+    padding: 4.7vw 0 5.3vw;
+}
+
+.step-card-arrow1,
+.step-card-arrow2,
+.step-card-arrow3 {
+    position: absolute;
+}
+
+.step-card-arrow1,
+.step-card-arrow3 {
+    top: 10%;
+}
+.step-card-arrow1 {
+    left: 18%;
+}
+
+.step-card-arrow2 {
+    top: 30%;
+    left: 41%;
+}
+
+.step-card-arrow3 {
+    right: 20%;
 }
 
 .step-card {
@@ -381,6 +405,11 @@ background-color: #e7edf3;
     width: 24%;
     padding: 0 3%;
     text-align: center;
+}
+
+.fa-step-card_image {
+    font-size: 62px;
+    text-shadow: -2px 0 #709dca, 0 2px #709dca, 2px 0 #709dca, 0 -2px #709dca;
 }
 
 .step-card_heading {
