@@ -117,7 +117,9 @@ body {
     position: relative;
 }
 
-.fa {
+.fa-client-form_item_name-pic,
+.fa-client-form_item_email-pic,
+.fa-client-form_item_phone-pic {
     position: absolute;
     top: 30%;
     left: 5%;
@@ -214,10 +216,14 @@ body {
 } 
 
 .our-services_list_item_icon {
+    display: inline-block;
     max-width: 7%;
+    vertical-align: top;
 }
 
 .our-services_list_item_wrapper {
+    display: inline-block;
+    max-width: 92%;
     padding-left: 2.4vw;
 }
 
@@ -228,6 +234,15 @@ body {
     font-weight: 700;
     line-height: 1;
     text-transform: uppercase;
+}
+
+.fa-our-services_list_item_icon {
+    font-size: 44px;
+    text-shadow: -2px 0 #709dca, 0 2px #709dca, 2px 0 #709dca, 0 -2px #709dca;
+}
+
+.first-icon{
+    text-shadow: -2px 0 #f6772c, 0 2px #f6772c, 2px 0 #f6772c, 0 -2px #f6772c;
 }
 
 /* about-us */
