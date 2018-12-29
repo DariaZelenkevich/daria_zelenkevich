@@ -656,3 +656,111 @@ background-color: #e7edf3;
     color: #fff;
     background-color: #709dca;
 }
+
+
+/* 
+
+~~~ MEDIA REQUESTS~~~
+
+*/
+
+@media (max-width: 1024px) {
+/* boost-up */
+
+    .boost-up_form {
+        padding: 1.8vw 0 30vw;
+    }
+}
+
+
+@media (max-width: 1010px) {
+/* happy-clients */
+    
+    .happy-clients_testimonials {
+        text-align: center;
+    }
+
+    .happy-clients_testimonial {
+        max-width: 60%;
+    }
+
+    .happy-clients_testimonial:nth-of-type(odd) {
+        margin-right: 0;
+    }
+    
+    .happy-clients_testimonial:nth-of-type(even) {
+        margin-left: 0;
+    }
+    
+    .happy-clients_testimonial:nth-of-type(2) {
+        margin-top: 20px;
+    }
+        
+}
+
+@media (max-width: 940px) {
+/* how-it-works */
+    .step-card-arrow1,
+    .step-card-arrow2,
+    .step-card-arrow3 {
+        display: none;
+    }
+}
+
+@media (max-width: 770px) {
+/* our-services */
+
+    .our-services_list_item_icon {
+        max-width: 15%;
+    }
+    .our-services_list_item_wrapper {
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 580px) {
+/* boost-up */
+
+.fa-client-form_item_email-pic,
+.fa-client-form_item_phone-pic {
+    top: 80%;
+    left: 10%;
+    transform: translateX(-2060%);
+}
+
+.fa-client-form_item_phone-pic {
+    left: 10%;
+    transform: translateX(-2590%);
+}
+
+
+    .newsletter_form_item-user,
+    .newsletter_form_item-email,
+    .newsletter-form_button,
+    .boost-up_form_item,
+    .boost-up_form_button {
+        display: inline-block;
+        max-width: 50%;
+        width: 50%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+/* choos-price */
+
+    .price-card {
+        width: 40%;
+        max-width: 40%;
+        margin-right: auto;
+        margin-left: auto;
+        display: block;
+    }
+
+    .price-card:not(:first-of-type) {
+        margin-top: 20px;
+    }
+
+}
+
+
+    
