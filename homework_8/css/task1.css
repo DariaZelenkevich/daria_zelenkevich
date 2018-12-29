@@ -119,8 +119,8 @@ body {
 
 .fa {
     position: absolute;
-    top: 0.7vw;
-    left: 0.6vw;
+    top: 30%;
+    left: 5%;
 }
 
 /* nav-menu */
@@ -182,6 +182,12 @@ body {
 .boost-up_form {
     padding: 1.8vw 0 4.1vw;
     text-align: center;
+}
+
+.boost-up_form_item,
+.boost-up_form_button {
+    max-width: 20%;
+    width: 20%;
 }
 
 /* our-services */
