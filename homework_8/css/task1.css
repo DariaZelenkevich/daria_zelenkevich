@@ -680,7 +680,6 @@ background-color: #e7edf3;
         padding: 1.8vw 0 30vw;
     }
 
-
     /*our-services  */
     .our-services_list {
         padding-right: 2.6vw;
@@ -737,10 +736,11 @@ background-color: #e7edf3;
 
 @media (max-width: 940px) {
     /* how-it-works */
+    
     .step-card-arrow1,
     .step-card-arrow2,
     .step-card-arrow3 {
-        display: none;
+        width: 10%;
     }
 }
 
@@ -797,6 +797,14 @@ background-color: #e7edf3;
 
     .price-card:not(:first-of-type) {
         margin-top: 20px;
+    }
+
+    /* how-it-works */
+
+    .step-card-arrow1,
+    .step-card-arrow2,
+    .step-card-arrow3 {
+        display: none;
     }
 }
 
