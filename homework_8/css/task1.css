@@ -97,6 +97,10 @@ body {
 
 }
 
+.page-button_link:hover {
+    text-decoration: underline;
+}
+
 /* client-form */
 
 .client-form {
@@ -148,6 +152,10 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     color: #868686;
+}
+
+.nav-menu_item_link:hover {
+    text-decoration: underline;
 }
 
 .active {
