@@ -255,7 +255,7 @@ body {
 
 .our-services_list_item_wrapper {
     display: inline-block;
-    max-width: 92%;
+    max-width: 80%;
     padding-left: 2.4vw;
 }
 
@@ -675,16 +675,23 @@ background-color: #e7edf3;
 */
 
 @media (max-width: 1024px) {
-/* boost-up */
+    /* boost-up */
 
     .boost-up_form {
         padding: 1.8vw 0 30vw;
+    }
+
+
+    /*our-services  */
+    .our-services_list {
+        padding-right: 2.6vw;
+        padding-left: 2.6vw;
     }
 }
 
 
 @media (max-width: 1010px) {
-/* happy-clients */
+    /* happy-clients */
     
     .happy-clients_testimonials {
         text-align: center;
@@ -709,7 +716,7 @@ background-color: #e7edf3;
 }
 
 @media (max-width: 940px) {
-/* how-it-works */
+    /* how-it-works */
     .step-card-arrow1,
     .step-card-arrow2,
     .step-card-arrow3 {
@@ -718,30 +725,30 @@ background-color: #e7edf3;
 }
 
 @media (max-width: 770px) {
-/* our-services */
+    /* our-services */
 
     .our-services_list_item_icon {
         max-width: 15%;
     }
     .our-services_list_item_wrapper {
-        max-width: 80%;
+        max-width: 75%;
     }
 }
 
 @media (max-width: 580px) {
-/* boost-up */
+    /* boost-up */
 
-.fa-client-form_item_email-pic,
-.fa-client-form_item_phone-pic {
-    top: 80%;
-    left: 10%;
-    transform: translateX(-2060%);
-}
+    .fa-client-form_item_email-pic,
+    .fa-client-form_item_phone-pic {
+        top: 80%;
+        left: 10%;
+        transform: translateX(-2060%);
+    }
 
-.fa-client-form_item_phone-pic {
-    left: 10%;
-    transform: translateX(-2590%);
-}
+    .fa-client-form_item_phone-pic {
+        left: 10%;
+        transform: translateX(-2590%);
+    }
 
 
     .newsletter_form_item-user,
@@ -756,7 +763,7 @@ background-color: #e7edf3;
         margin-left: auto;
     }
 
-/* choos-price */
+    /* choos-price */
 
     .price-card {
         width: 40%;
@@ -768,6 +775,15 @@ background-color: #e7edf3;
 
     .price-card:not(:first-of-type) {
         margin-top: 20px;
+    }
+
+    /* our-services  */
+
+    .our-services_list_item_icon {
+        display: block;
+        margin-bottom: 20px;
+        padding-right: 2.6vw;
+        padding-left: 2.6vw;
     }
 
 }
