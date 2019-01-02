@@ -38,12 +38,6 @@ body {
     margin: 0 auto;
 }
 
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: block;
-}
-
 /* section heading & heading-text */
 
 .heading,
@@ -171,18 +165,21 @@ body {
 /* page-header */
 
 .page-header_wrapper {
+    display: flex;
+    justify-content: space-between;
     padding: 1.3vw 0;
 }
 
+.page-header_logo-image_wrapper {
+    width: 7%;
+}
 .page-header_logo-image {
-    display: inline-block;
+    width: 100%;
     max-width: 100%;
-    float: left;
 }
 
 .page-header-menu {
-    float: right;
-    padding: 0.6vw 0;
+    align-self: center;
 }
 
 /* boost-up */
@@ -736,7 +733,7 @@ background-color: #e7edf3;
 
 @media (max-width: 940px) {
     /* how-it-works */
-    
+
     .step-card-arrow1,
     .step-card-arrow2,
     .step-card-arrow3 {
@@ -757,6 +754,13 @@ background-color: #e7edf3;
 }
 
 @media (max-width: 580px) {
+    /* page-header */
+
+    .page-header_wrapper {
+        flex-direction: column;
+    }
+
+
     /* boost-up */
 
     .fa-client-form_item_email-pic,
