@@ -287,9 +287,14 @@ body {
     width: 50%;
 }
 
+.about-us_section-wrapper {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
 .about-us_wrapper {
     display: inline-block;
-    width: 50%;
+    width: 65%;
     padding: 9.6vw 0 10.3vw 4.7vw;
 }
 
