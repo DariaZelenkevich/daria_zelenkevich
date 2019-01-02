@@ -265,7 +265,7 @@ body {
     text-shadow: -2px 0 #709dca, 0 2px #709dca, 2px 0 #709dca, 0 -2px #709dca;
 }
 
-.first-icon{
+.fa-our-services_list_item_icon:hover{
     text-shadow: -2px 0 #f6772c, 0 2px #f6772c, 2px 0 #f6772c, 0 -2px #f6772c;
 }
 
