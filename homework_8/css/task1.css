@@ -288,7 +288,6 @@ body {
     display: block;
     max-width: 100%;
     width: 50%;
-    float: left;
 }
 
 .about-us_wrapper {
@@ -687,6 +686,27 @@ background-color: #e7edf3;
         padding-right: 2.6vw;
         padding-left: 2.6vw;
     }
+
+    /* about-us */
+
+    .about-us {
+        flex-direction: column;
+    }
+
+    .about-us_wrapper {
+        width: 100%;
+        padding: 9.6vw 4.7vw 10.3vw;
+    }
+
+    .about-us_wrapper,
+    .about-us_heading {
+        text-align: center;
+    }
+
+    .about-us_image {
+        width: 100%;
+    }
+
 }
 
 
