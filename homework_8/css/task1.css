@@ -101,18 +101,10 @@ body {
     color: #a9a9a9;
 }
 
-.client-form_item {
-    padding: 10px 10px 10px 40px;
-    border: 1px solid #cbcbcb;
-    font-size: 10px;
-    line-height: 1;
-    /* box-shadow: 0.5px 0.5px 1px #a9a9a9; */
-}
-
-.client-form_item_name-pic,
-.client-form_item_email-pic,
-.client-form_item_phone-pic {
+.client-form_item_wrapper {
     position: relative;
+    display: inline-block;
+    max-width: 100%;
 }
 
 .fa-client-form_item_name-pic,
@@ -120,7 +112,16 @@ body {
 .fa-client-form_item_phone-pic {
     position: absolute;
     top: 30%;
-    left: 5%;
+    left: 10%;
+    z-index: 1;
+}
+
+.client-form_item {
+    width: 100%;
+    padding: 10px 10px 10px 40px;
+    border: 1px solid #cbcbcb;
+    font-size: 10px;
+    line-height: 1;
 }
 
 /* nav-menu */
@@ -197,10 +198,13 @@ body {
     text-align: center;
 }
 
-.boost-up_form_item,
-.boost-up_form_button {
-    max-width: 20%;
-    width: 20%;
+.boost-up_form > .client-form_item_wrapper {
+    margin-bottom: 10px;
+}
+
+.boost-up_form_button_link{
+    padding: 10px;
+    border: 1px solid #ffbb42;
 }
 
 .boost-up_slider-wrapper{
@@ -600,21 +604,42 @@ background-color: #e7edf3;
 }
 
 .newsletter_form {
-    padding: 2.4vw 0 2.9vw;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 2vw;
     width: 100%;
     text-align: center;
 }
 
-.newsletter_form_item-user {
-    width: 20%;
+.newsletter_form_item_wrapper-name,
+.newsletter_form_item_wrapper-email {
+    margin-right: 10px;
+    align-self: center;
 }
 
-.newsletter_form_item-email {
-    width: 30%; 
+.newsletter_form_item_wrapper-name,
+.newsletter-form_button {
+    flex-grow: 1;
 }
 
- .newsletter-form_button {
-    width: 15%;
+.newsletter_form_item_wrapper-email {
+    flex-grow: 2;
+}
+
+.newsletter-form_button_link {
+    padding: 10px;
+}
+
+.newsletter_form_item_wrapper-name-pic {
+    left: 5%;
+}
+
+.newsletter_form_item_wrapper-email-pic {
+    left: 3%;
+}
+
+.newsletter_form_item {
+    text-overflow: ellipsis;
 }
 
 .newsletter_image {
@@ -765,35 +790,6 @@ background-color: #e7edf3;
         flex-direction: column;
     }
 
-
-    /* boost-up */
-
-    .fa-client-form_item_email-pic,
-    .fa-client-form_item_phone-pic {
-        top: 80%;
-        left: 10%;
-        transform: translateX(-2060%);
-    }
-
-    .fa-client-form_item_phone-pic {
-        left: 10%;
-        transform: translateX(-2590%);
-    }
-
-    /* newsletter */
-
-    .newsletter_form_item-user,
-    .newsletter_form_item-email,
-    .newsletter-form_button,
-    .boost-up_form_item,
-    .boost-up_form_button {
-        display: inline-block;
-        max-width: 50%;
-        width: 50%;
-        margin-right: auto;
-        margin-left: auto;
-    }
-
     /* choos-price */
 
     .price-card {
@@ -814,6 +810,14 @@ background-color: #e7edf3;
     .step-card-arrow2,
     .step-card-arrow3 {
         display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    /* newsletter */
+
+    .newsletter-form_button_link {
+        font-size: 7px;
     }
 }
 
