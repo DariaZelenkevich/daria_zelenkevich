@@ -485,7 +485,7 @@ background-color: #e7edf3;
 .happy-clients_testimonial {
     display: inline-block;
     max-width: 48%;
-    margin-top: 1.2vw;
+    margin-top: 20px;
     padding: 2.6vw 0.6vw 2.9vw 1.8vw;
     vertical-align: top;
     font-size: 13px;
@@ -750,6 +750,7 @@ background-color: #e7edf3;
         transform: translateX(-2590%);
     }
 
+    /* newsletter */
 
     .newsletter_form_item-user,
     .newsletter_form_item-email,
