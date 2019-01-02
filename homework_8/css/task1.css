@@ -728,11 +728,12 @@ background-color: #e7edf3;
     /* our-services */
 
     .our-services_list_item_icon {
-        max-width: 15%;
+        display: block;
+        margin-bottom: 20px;
+        padding-right: 2.6vw;
+        padding-left: 2.6vw;
     }
-    .our-services_list_item_wrapper {
-        max-width: 75%;
-    }
+
 }
 
 @media (max-width: 580px) {
@@ -777,16 +778,6 @@ background-color: #e7edf3;
     .price-card:not(:first-of-type) {
         margin-top: 20px;
     }
-
-    /* our-services  */
-
-    .our-services_list_item_icon {
-        display: block;
-        margin-bottom: 20px;
-        padding-right: 2.6vw;
-        padding-left: 2.6vw;
-    }
-
 }
 
 
