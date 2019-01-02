@@ -598,6 +598,10 @@ background-color: #e7edf3;
 
 /* newsletter */
 
+.newsletter_heading-text {
+    margin-bottom: 2.4vw;
+}
+
 .newsletter_section-wrapper {
     padding-top: 8.8vw;
 }
@@ -642,6 +646,7 @@ background-color: #e7edf3;
 }
 
 .newsletter_image {
+    margin-top: 3.2vw;
     max-width: 100%;
     width: 100%;
 }
