@@ -10,23 +10,26 @@ body {
 /* start_form_button */
 
 .start_form_button {
-    display: block;
-    width: 20%;
+    display: inline-block;
     margin-top: 20px;
-    padding: 10px;
+    margin-left: 20px;
+    padding: 0;
     border: none;
     border-radius: 5px;
     outline: none;
-    font-size: 14px;
-    font-weight: bold;
-    text-align: center;
-    letter-spacing: -0.65px;
-    background-color: #20b08d;
 }
 
 .start_form_button_link {
+    display: block;
+    padding: 10px;
     color: #fff;
+    font-size: 14px;
+    font-weight: bold;
     text-decoration: none;
+    text-align: center;
+    letter-spacing: -0.65px;
+    border-radius: 5px;
+    background-color: #20b08d;
 }
 
 #site_form:target {
