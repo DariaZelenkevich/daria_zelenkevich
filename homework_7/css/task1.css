@@ -245,7 +245,6 @@ textarea:focus {
 .photo_upload_wrap,
 .save_button {
     width: 50%;
-    padding: 10px;
     border-radius: 5px;
     font-size: 14px;
     color: #fff;
@@ -258,7 +257,7 @@ textarea:focus {
 .photo_upload_wrap {
     position: relative; 
     overflow: hidden;
-    height: 15px;
+    height: 35px;
 }
 
 .photo_upload_label {
@@ -275,14 +274,16 @@ textarea:focus {
 }
 
 .photo_upload_text{
-    display: inline-block;
+    display: block;
     padding: 10px;
+    overflow: visible;
 }
 
 .save_button {
     display: block;
     border: none;
     margin-top: 20px;
+    padding: 10px;
 }
 
 /* ~~~~~~~ */
