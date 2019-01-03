@@ -157,7 +157,7 @@ p {
 	width: 10px;             
     height: 10px;          
     margin-right: 5px;
-	border-radius: 3px;
+	border-radius: 30%;
 }
 
 .radio:checked + .radio-custom::before {
@@ -176,9 +176,9 @@ p {
 	content: "\2713";            
 	display: block;			 
 	position: absolute;     
-	top: -3px;
-	right: -1px;
-    color: #20b08d;
+	top: -150%;
+	right: -70%;
+    color: #000;
 }
 
 /*~input~ & ~select~*/
