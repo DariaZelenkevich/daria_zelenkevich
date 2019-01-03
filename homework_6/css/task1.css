@@ -56,6 +56,17 @@
     border-radius: 5px; 
 }
 
+.formwrap::after {
+    content: "";
+    position: absolute;
+    top: 12%;
+    left: -1%;
+    width: 1.2vw;
+    height: 1.2vw;
+    transform: rotate(45deg);
+    background-color: #eeeff1;
+}
+
 .login_form_input {
     display: block;
     width: 100%;
@@ -121,7 +132,7 @@
     text-align: center;
 }
 
-.formwrap_decoration {
+/* .formwrap_decoration {
     position: absolute;
     top: 12%;
     left: -1%;
@@ -129,4 +140,4 @@
     height: 1.2vw;
     transform: rotate(45deg);
     background-color: #eeeff1;
-}
+} */
