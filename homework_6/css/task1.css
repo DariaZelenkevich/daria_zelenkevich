@@ -13,9 +13,8 @@
 }
 
 .container {
-    position: relative;
-    max-width: 60%;
-    padding: 10px 20px;
+    max-width: 60vw;
+    padding: 0.8vw 1.5vw;
     font-family: Arial;
     background-color: #1bbc9b;
 }
@@ -28,12 +27,12 @@
 
 .greeting_box {
     width: 30%;
-    padding: 0 10px;
+    padding: 0 0.8vw;
 }
 
 .greeting_box_image {
     display: block;
-    margin: 0 auto 10px auto;
+    margin: 0 auto 0.8vw auto;
     max-width: 100%;
     width: 50%;
     height: 50%;
@@ -41,6 +40,7 @@
 
 .greeting_box_text > span {
     display: block;
+    font-size: 12px;
     color: #fdfdff;
     letter-spacing: -0.65px;
     text-align: center;
@@ -49,39 +49,34 @@
 /* form*/
 
 .formwrap {
+    position: relative;
     width: 70%;
-    padding: 20px;
+    padding: 1.5vw;
     background-color: #eeeff1;
     border-radius: 5px; 
 }
 
-.log_name,
-.log_password {
+.login_form_input {
     display: block;
     width: 100%;
     height: 30px;
     margin-bottom: 10px;
+    padding: 10px 30px 10px 10px;
     outline: none;
-    border: none;
+    border: 2px solid #eeeff1;
     border-radius: 5px;
-}
-
-.log_name[placeholder],
-.log_password[placeholder] {
-    padding-left: 15px;
     color: #bdc6cd;
     letter-spacing: -0.65px;
 }
 
-.log_name:focus,
-.log_password:focus {
+.login_form_input:focus {
     border: 2px solid #20b08d;
 }
 
-.log_name_pic::after {
+.user_input-wrapper::after{
     position: absolute;
-    top: 18%;
-    right: 10%;  
+    top: 12%;
+    right: 7%;  
     content:"";
     display: block;
     width: 15px;
@@ -90,10 +85,10 @@
     background-size: cover;
 }
 
-.log_password_pic::after {
+.password_input-wrapper::after {
     position: absolute;
-    top: 37%;
-    right: 10%;  
+    top: 33%;
+    right: 7%;  
     content:"";
     display: block;
     width: 15px;
@@ -128,10 +123,10 @@
 
 .formwrap_decoration {
     position: absolute;
-    top: 18%;
-    left: 30%;
-    width: 15px;
-    height: 15px;
-    transform:  rotate(45deg);
+    top: 12%;
+    left: -1%;
+    width: 1.2vw;
+    height: 1.2vw;
+    transform: rotate(45deg);
     background-color: #eeeff1;
 }
