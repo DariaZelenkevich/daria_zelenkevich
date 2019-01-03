@@ -86,7 +86,7 @@
 
 .user_input-wrapper::after{
     position: absolute;
-    top: 12%;
+    top: 13%;
     right: 7%;  
     content:"";
     display: block;
@@ -98,7 +98,7 @@
 
 .password_input-wrapper::after {
     position: absolute;
-    top: 33%;
+    top: 34%;
     right: 7%;  
     content:"";
     display: block;
