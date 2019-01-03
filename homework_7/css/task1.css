@@ -305,14 +305,9 @@ textarea:focus {
 
 /* ~~~~~~~ */
 
-@media (max-width: 767px) {
-    .input_label {
-        display: inline-block;
-        width: 20%;
-    }
-
-    input[type="text"],
-    input[type="email"] {
-        width: 70%;
+@media (max-width: 770px) {
+    .photo_upload_wrap,
+    .save_button {
+        font-size: 1.4vw;
     }
 }
