@@ -65,6 +65,17 @@ body {
     background-color: #1bbc9b;
 }
 
+.container::after {
+    content: "";
+    position: absolute;
+    top: 11%;
+    left: 30%;
+    width: 15px;
+    height: 15px;
+    transform:  rotate(45deg);
+    background-color: #f5f8ff;
+}
+
 .greetting_page_item {
     float: left;
 }
@@ -293,16 +304,6 @@ textarea:focus {
 }
 
 /* ~~~~~~~ */
-
-.form_decoration {
-    position: absolute;
-    top: 11%;
-    left: 30%;
-    width: 15px;
-    height: 15px;
-    transform:  rotate(45deg);
-    background-color: #f5f8ff;
-}
 
 @media (max-width: 767px) {
     .input_label {
