@@ -149,12 +149,6 @@ body {
     color: #868686;
 }
 
-.nav-menu_item_link:hover {
-    border-radius: 3px;
-    color: #fff;
-    background-color: #ffbb42;
-}
-
 /* 
 ~~~SECTIONS~~~
 */
@@ -177,6 +171,11 @@ body {
 
 .page-header-menu {
     align-self: center;
+}
+.page-header-menu .nav-menu_item_link:hover {
+    border-radius: 3px;
+    color: #fff;
+    background-color: #ffbb42;
 }
 
 /* boost-up */
