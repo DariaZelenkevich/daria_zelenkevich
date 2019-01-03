@@ -150,10 +150,6 @@ body {
 }
 
 .nav-menu_item_link:hover {
-    text-decoration: underline;
-}
-
-.active {
     border-radius: 3px;
     color: #fff;
     background-color: #ffbb42;
