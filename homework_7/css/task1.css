@@ -307,6 +307,6 @@ textarea:focus {
 @media (max-width: 770px) {
     .photo_upload_wrap,
     .save_button {
-        font-size: 1.4vw;
+        font-size: 2vw;
     }
 }
