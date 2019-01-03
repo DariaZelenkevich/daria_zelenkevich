@@ -286,6 +286,12 @@ textarea:focus {
     padding: 10px;
 }
 
+.comments {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100px;
+}
+
 /* ~~~~~~~ */
 
 .form_decoration {
