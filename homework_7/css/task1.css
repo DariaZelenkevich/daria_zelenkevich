@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 .clearfix::after {
     content: "";
     clear: both;
@@ -144,9 +148,9 @@ p {
 }
 
 .radio-custom {
-	width: 7px;
-	height: 7px;
-	border-radius: 5px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
 }
 
 .checkbox_status-custom {
