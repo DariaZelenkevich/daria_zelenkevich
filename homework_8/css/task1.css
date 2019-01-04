@@ -665,7 +665,7 @@ background-color: #e7edf3;
 
 .page-footer_wrapper {
     border-top: 1px solid #e3e7ec;
-    padding-top: 4.1vw;
+    padding-top: 4vw;
     text-align: center;
 }
 
@@ -674,7 +674,7 @@ background-color: #e7edf3;
 }
 
 .page-footer_contacts {
-    padding: 1.8vw 0 2.9vw;
+    padding: 1.7vw 0 3.1vw;
 }
 
 .page-footer_phone-number {
@@ -692,7 +692,7 @@ background-color: #e7edf3;
 .fa-page-footer_social-media {
     display: inline-block;
     padding: 0 .3vw;
-    font-size: 18px;
+    font-size: 13px;
     color: #709dca;
 }
 
@@ -701,7 +701,8 @@ background-color: #e7edf3;
 }
 
 .page-footer_copyright {
-    padding: 1.2vw 0;
+    padding: 1vw 0;
+    font-size: 10px;
     line-height: 1;
     color: #fff;
     background-color: #709dca;
