@@ -296,25 +296,31 @@ body {
 
 .about-us_wrapper {
     display: inline-block;
-    width: 65%;
-    padding: 9.6vw 0 10.3vw 4.7vw;
+    width: 69%;
+    padding: 9.6vw 0 10.3vw 4.71vw;
 }
 
 .about-us_heading {
     text-align: left;
-    margin-bottom: 1.8vw;
+    margin-bottom: 1.6vw;
 }
 
 .about-us_text {
     font-weight: 400;
     color: #fff;
-    padding-bottom: 1.8vw;
+    padding-bottom: 1.94vw;
+    font-size: 11px;
+    line-height: 1.9;
 }
 
 .about-us_button {
-    width: 35%;
+    width: 29%;
     border: 1px solid #e7ad48;
     background-color: #ffc155;
+}
+
+.about-us_button_link {
+    padding: 1vw;
 }
 
 /* choos-price */
