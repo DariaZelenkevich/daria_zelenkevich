@@ -457,12 +457,12 @@ background-color: #e7edf3;
 }
 
 .fa-step-card_image {
-    font-size: 62px;
+    font-size: 57px;
     text-shadow: -2px 0 #709dca, 0 2px #709dca, 2px 0 #709dca, 0 -2px #709dca;
 }
 
 .step-card_heading {
-    padding: 5.9vw 0 1.8vw;
+    padding: 6vw 0 1.64vw;
     font-family: "Lato";
     font-size: 15px;
     font-weight: 700;
@@ -477,7 +477,7 @@ background-color: #e7edf3;
 
 .how-it-works_button {
     display: block;
-    width: 20%;
+    width: 14%;
     margin: 0 auto;
     text-align: center;
 }
