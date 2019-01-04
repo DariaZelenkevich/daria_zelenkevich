@@ -139,7 +139,7 @@ body {
 
 .nav-menu_item_link {
     display: inline-block;
-    padding: 0.6vw 1.2vw;
+    padding: 0.72vw 1.2vw;
     font-family: "Lato";
     font-size: 10px;
     font-weight: 400;
@@ -234,7 +234,7 @@ body {
     display: inline-block;
     max-width: 49%;
     margin-top: 4.64vw;
-    padding-right: 5.3vw;
+    padding-right: 4vw;
     vertical-align: top;
 }
 
@@ -264,7 +264,7 @@ body {
 }
 
 .fa-our-services_list_item_icon {
-    font-size: 44px;
+    font-size: 40px;
     text-shadow: -2px 0 #709dca, 0 2px #709dca, 2px 0 #709dca, 0 -2px #709dca;
 }
 
