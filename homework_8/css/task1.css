@@ -347,7 +347,7 @@ background-color: #e7edf3;
     border: 1px solid #ccd5df;
     border-radius: 3px;
     font-family: "Lato";
-    font-size: 14px;
+    font-size: 10px;
     text-align: center;
     text-transform: uppercase;
     background-color: #fff;
@@ -356,9 +356,10 @@ background-color: #e7edf3;
 }
 
 .price-card_heading {
-    padding-bottom: 1.6vw;
-    font-size: 18px;
+    padding-bottom: 1.76vw;
+    font-size: 25px;
     line-height: 1;
+    font-weight: 300;
     color: #818b95;
 }
 
@@ -379,6 +380,7 @@ background-color: #e7edf3;
 
 .price-card_description-list {
     padding: 1.94vw 0 1.11vw;
+    margin: 0;
     list-style: none;
 }
 
@@ -397,7 +399,7 @@ background-color: #e7edf3;
 
 .best-offer-card {
     width: 40%;
-    padding: 5.3vw 1.82vw 4.7vw;
+    padding: 5.11vw 1.82vw 4.5vw;
     background-color: #709dca;
     border: none;
 }
