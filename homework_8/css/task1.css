@@ -223,18 +223,18 @@ body {
 /* our-services */
 
 .our-services_section-wrapper {
-    padding: 6vw 0 9vw;
+    padding: 6.2vw 0 9.11vw;
 }
 
 .our-services_list {
-    padding-top: 5.29vw;
+    padding-top: 5.47vw;
 }
 
 .our-services_list_item {
     display: inline-block;
     max-width: 49%;
-    margin-top: 4.64vw;
-    padding-right: 4vw;
+    margin-top: 4.7vw;
+    padding-right: 4.2vw;
     vertical-align: top;
 }
 
@@ -245,13 +245,13 @@ body {
 
 .our-services_list_item_icon {
     display: inline-block;
-    width: 16%;
+    width: 13%;
     vertical-align: top;
 }
 
 .our-services_list_item_wrapper {
     display: inline-block;
-    width: 83%;
+    width: 86%;
 }
 
 .our-services_list_item_heading {
@@ -263,8 +263,12 @@ body {
     text-transform: uppercase;
 }
 
+.our-services_list_item_text {
+    line-height: 1.5;
+}
+
 .fa-our-services_list_item_icon {
-    font-size: 40px;
+    font-size: 44px;
     text-shadow: -2px 0 #709dca, 0 2px #709dca, 2px 0 #709dca, 0 -2px #709dca;
 }
 
