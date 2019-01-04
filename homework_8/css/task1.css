@@ -245,13 +245,13 @@ body {
 
 .our-services_list_item_icon {
     display: inline-block;
+    width: 16%;
     vertical-align: top;
 }
 
 .our-services_list_item_wrapper {
     display: inline-block;
-    max-width: 80%;
-    padding-left: 2.4vw;
+    width: 83%;
 }
 
 .our-services_list_item_heading {
