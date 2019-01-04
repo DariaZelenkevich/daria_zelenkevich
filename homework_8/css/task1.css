@@ -615,10 +615,10 @@ background-color: #e7edf3;
 
 .newsletter_form {
     display: flex;
-    justify-content: space-around;
+    margin: auto;
+    justify-content: center;
     padding: 0 2vw;
-    width: 100%;
-    text-align: center;
+    width: 90%;
 }
 
 .newsletter_form_item_wrapper-name,
@@ -627,13 +627,16 @@ background-color: #e7edf3;
     align-self: center;
 }
 
-.newsletter_form_item_wrapper-name,
-.newsletter-form_button {
-    flex-grow: 1;
+.newsletter_form_item_wrapper-name{
+    width: 31%;
 }
 
 .newsletter_form_item_wrapper-email {
-    flex-grow: 2;
+    width: 39%;
+}
+
+.newsletter-form_button {
+    width: 22%;
 }
 
 .newsletter-form_button_link {
