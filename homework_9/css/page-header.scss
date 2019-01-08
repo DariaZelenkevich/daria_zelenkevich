@@ -1,0 +1,24 @@
+.page-header__content {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2vw 0;
+}
+
+.logo_top {
+    width: 4.3%;
+}
+
+.logo_top .logo__image {
+    width: 100%;
+    max-width: 100%;
+}
+
+.nav-menu_top {
+    align-self: center;
+}
+
+.nav-menu_top .nav-menu__link:hover {
+    border-radius: 3px;
+    color: #fff;
+    background-color: #ffbb42;
+}
