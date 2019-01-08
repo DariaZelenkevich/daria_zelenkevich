@@ -1,3 +1,5 @@
+@import "./variables.scss";
+
 .page-header__content {
     display: flex;
     justify-content: space-between;
@@ -19,6 +21,6 @@
 
 .nav-menu_top .nav-menu__link:hover {
     border-radius: 3px;
-    color: #fff;
-    background-color: #ffbb42;
+    color: $light-text-color;
+    background-color: $warm-button-background-color;
 }
