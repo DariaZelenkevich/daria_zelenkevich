@@ -1,0 +1,152 @@
+@import "./variables.scss";
+
+@font-face {
+    font-family: "Gotham-Black";
+    src: url("../fonts/Gotham-Black.ttf");
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("../fonts/Lato-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Brandon Grotesque";
+    src: url("../fonts/BrandonGrotesque-Thin.ttf")
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.page {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans";
+    font-size: 13px;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.heading,
+.heading-text {
+    text-align: center;
+
+    &_light-style {
+        color: $light-text-color;
+    }
+
+    &_dark-style{
+        color: $dark-text-color;
+    }
+
+}
+
+.heading {
+    font-family: "Gotham-Black";
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: -0.88px;
+
+}
+
+.heading-text {
+    margin-top: 0.6vw;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1;
+}
+
+.nav-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    &__item {
+        display: inline-block;
+    }
+
+    &__link {
+        display: inline-block;
+        padding: 0.72vw 1.2vw;
+        font-family: "Lato";
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 1;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $mid-gray-text-color;    
+    }
+
+}
+
+.client-form {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    color: $light-gray-text-color;
+
+
+    &__wrapper {
+        position: relative;
+        display: inline-block;
+        max-width: 100%;    
+    }
+
+    &__name-pic,
+    &__email-pic,
+    &__phone-pic {
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        z-index: 1;
+    }
+
+    &__item {
+        max-width: 100%;
+        margin-right: 10px;
+        align-self: center;
+        padding: 10px 10px 10px 40px;
+        border: 1px solid #cbcbcb;
+        font-size: 10px;
+        line-height: 1; 
+    }
+}
+
+.page-button {
+    padding: 0;
+    display: inline-block;
+    border: none;
+    border-radius: 3px;
+    background-color: $warm-button-background-color;
+
+    &__link {
+        display: inline-block;
+        padding: 0.94vw;
+        font-size: 10px;
+        line-height: 1;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fff;
+    }
+
+    &__link:hover {
+        text-decoration: underline;
+    }
+
+}
+
+
+
