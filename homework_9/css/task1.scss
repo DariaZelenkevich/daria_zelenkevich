@@ -86,7 +86,7 @@
         line-height: 1;
         text-decoration: none;
         text-transform: uppercase;
-        color: $mid-gray-text-color;    
+        color: #e3e7ec;    
     }
 
 }
@@ -156,3 +156,4 @@
 @import "./how-it-works.scss"; 
 @import "./happy-clients.scss"; 
 @import "./newsletter.scss";
+@import "./page-footer.scss";
