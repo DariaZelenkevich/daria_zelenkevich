@@ -1,0 +1,56 @@
+@import "./variables.scss";
+
+.section-about-us {
+    background-color: #ffc155;
+    display: flex;
+    align-items: stretch;
+
+    &__image {
+        display: block;
+        max-width: 100%;
+        width: 50%;  
+    }
+
+    &__content {
+        max-width: 850px;
+        margin: 0 auto;
+    }
+
+    &__text-wrapper {
+        width: 69%;
+        padding: 9.6vw 0 10.3vw 4.71vw;  
+    }
+
+    &__text {
+        font-weight: 400;
+        color: #fff;
+        padding-bottom: 1.94vw;
+        font-size: 11px;
+        line-height: 1.9;
+    }
+
+    &__heading {
+        text-align: left;
+        margin-bottom: 1.6vw;
+    }
+
+    &__button {
+    }
+}
+
+.page-button {
+    
+    &_about-us {
+        width: 29%;
+        border: 1px solid #e7ad48;
+        background-color: $warm-background-color;   
+
+    }
+
+    &____link{
+        &_about-us {
+            padding: 1vw;
+        }
+    }
+
+}

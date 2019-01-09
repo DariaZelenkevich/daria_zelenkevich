@@ -1,0 +1,49 @@
+.section-about-us {
+  background-color: #ffc155;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.section-about-us__image {
+  display: block;
+  max-width: 100%;
+  width: 50%;
+}
+
+.section-about-us__content {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.section-about-us__text-wrapper {
+  width: 69%;
+  padding: 9.6vw 0 10.3vw 4.71vw;
+}
+
+.section-about-us__text {
+  font-weight: 400;
+  color: #fff;
+  padding-bottom: 1.94vw;
+  font-size: 11px;
+  line-height: 1.9;
+}
+
+.section-about-us__heading {
+  text-align: left;
+  margin-bottom: 1.6vw;
+}
+
+.page-button_about-us {
+  width: 29%;
+  border: 1px solid #e7ad48;
+  background-color: #ffc155;
+}
+
+.page-button____link_about-us {
+  padding: 1vw;
+}
+/*# sourceMappingURL=about-us.css.map */
