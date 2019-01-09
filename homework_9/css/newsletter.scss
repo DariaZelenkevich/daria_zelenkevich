@@ -1,0 +1,36 @@
+@import "./variables.scss";
+
+.section-newsletter {
+    padding-top: 8.8vw;
+
+    &__form {
+        margin-top: 2.4vw;
+        padding: 0 2vw;
+        width: 90%;
+    }
+
+    &__name,
+    &__email {
+        margin-right: 10px;
+        align-self: center;     
+    }
+
+    &__image {
+        margin-top: 3.2vw;
+        max-width: 100%;
+        width: 100%; 
+    }
+
+}
+
+.page-button {
+
+    &_newsletter {
+        
+    } 
+    &__link {
+        &_newsletter {
+            padding: 10px 
+        }
+    }
+} 
