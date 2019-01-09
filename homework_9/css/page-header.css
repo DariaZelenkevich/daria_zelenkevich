@@ -26,7 +26,11 @@
       align-self: center;
 }
 
-.nav-menu_top .nav-menu__link:hover {
+.nav-menu__link_top {
+  color: #868686;
+}
+
+.nav-menu__link_top:hover {
   border-radius: 3px;
   color: #fff;
   background-color: #ffbb42;

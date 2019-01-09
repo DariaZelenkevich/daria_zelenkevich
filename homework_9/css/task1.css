@@ -86,7 +86,7 @@
   line-height: 1;
   text-decoration: none;
   text-transform: uppercase;
-  color: #e3e7ec;
+  color: #394b50;
 }
 
 .client-form {
@@ -176,7 +176,11 @@
       align-self: center;
 }
 
-.nav-menu_top .nav-menu__link:hover {
+.nav-menu__link_top {
+  color: #868686;
+}
+
+.nav-menu__link_top:hover {
   border-radius: 3px;
   color: #fff;
   background-color: #ffbb42;
