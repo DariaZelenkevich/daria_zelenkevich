@@ -1,0 +1,57 @@
+@import "./variables.scss";
+
+.section-our-services {
+    padding: 6.2vw 0 9.11vw;
+
+    &__list {
+        padding-top: 5.47vw;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+        margin-top: 4.7vw;
+        padding-right: 4.2vw;
+    }
+
+    &__item:nth-of-type(1),
+    &__item:nth-of-type(2) {
+        margin-top: 0;
+    } 
+
+    &__icon {
+        width: 13%;
+    }
+
+    &__icon-image {
+        font-size: 44px;
+        text-shadow: -2px 0 $cold-background-color, 0 2px $cold-background-color, 2px 0 $cold-background-color, 0 -2px $cold-background-color;    
+    }
+
+    &__icon-image:hover{
+        text-shadow: -2px 0 #f6772c, 0 2px #f6772c, 2px 0 #f6772c, 0 -2px #f6772c;
+    }
+
+    &__item-wrapper {
+        width: 87%;
+    }
+
+    &__heading {
+        margin-bottom: 1.2vw;
+        font-family: "Lato";
+        font-size: 11px;
+        font-weight: 700;
+        line-height: 1;
+        text-transform: uppercase;
+    }
+    
+    &__text {
+        line-height: 1.5;
+    }
+    
+
+}
