@@ -1,0 +1,41 @@
+.page-footer {
+  border-top: 1px solid #e3e7ec;
+  padding-top: 4vw;
+  text-align: center;
+}
+
+.page-footer__contacts {
+  padding: 1.7vw 0 3.1vw;
+}
+
+.page-footer__phone-number {
+  font-family: "Lato";
+  font-size: 17px;
+  line-height: 1;
+  color: #394b50;
+}
+
+.page-footer__social-media {
+  display: block;
+  padding-top: 1.4vw;
+}
+
+.page-footer__social-media-icon {
+  display: inline-block;
+  padding: 0 .3vw;
+  font-size: 13px;
+  color: #709dca;
+}
+
+.page-footer__social-media-icon:hover {
+  color: #ffc155;
+}
+
+.page-footer__copyright {
+  padding: 1vw 0;
+  font-size: 10px;
+  line-height: 1;
+  color: #fff;
+  background-color: #709dca;
+}
+/*# sourceMappingURL=page-footer.css.map */

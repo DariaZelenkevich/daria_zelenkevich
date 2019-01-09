@@ -628,44 +628,34 @@
   text-align: center;
 }
 
-.page-footer_wrapper {
-  border-top: 1px solid #e3e7ec;
-  padding-top: 4vw;
-  text-align: center;
-}
-
-.page-footer-menu .nav-menu_item_link {
-  color: #394b50;
-}
-
-.page-footer_contacts {
+.page-footer__contacts {
   padding: 1.7vw 0 3.1vw;
 }
 
-.page-footer_phone-number {
+.page-footer__phone-number {
   font-family: "Lato";
   font-size: 17px;
   line-height: 1;
   color: #394b50;
 }
 
-.page-footer_social-media {
+.page-footer__social-media {
   display: block;
   padding-top: 1.4vw;
 }
 
-.fa-page-footer_social-media {
+.page-footer__social-media-icon {
   display: inline-block;
   padding: 0 .3vw;
   font-size: 13px;
   color: #709dca;
 }
 
-.fa-page-footer_social-media:hover {
+.page-footer__social-media-icon:hover {
   color: #ffc155;
 }
 
-.page-footer_copyright {
+.page-footer__copyright {
   padding: 1vw 0;
   font-size: 10px;
   line-height: 1;
