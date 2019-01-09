@@ -1,0 +1,97 @@
+@import "./variables.scss";
+
+.section-choos-price {
+    padding: 8.05vw 0 9.64vw;
+    font-size: 0;
+    background-color: $light-cold-background-color;
+
+    &__heading-text {
+        color: #75888d;
+        margin-bottom: 2.88vw;   
+    }
+
+    &__price-card-list {
+        display: flex;
+        align-items: center;
+    }
+
+    &__price-card {
+        width: 33.33%;
+        max-width: 33.33%;
+        padding: 3.35vw 1.82vw 2.82vw;
+        border: 1px solid #ccd5df;
+        border-radius: 3px;
+        font-family: "Lato";
+        font-size: 10px;
+        text-align: center;
+        text-transform: uppercase;
+        background-color: $light-text-color;
+
+        &_best-offer {
+            width: 40%;
+            padding: 5.11vw 1.82vw 4.5vw;
+            background-color: $cold-background-color;
+            border: none;
+        }
+
+
+    }
+
+    &__heading {
+        padding-bottom: 1.76vw;
+        font-size: 25px;
+        line-height: 1;
+        font-weight: 300;
+        color: #818b95;  
+    }
+
+    &__price {
+        font-size: 3.5vw;
+        font-weight: bold;
+        color: $warm-button-background-color;    
+    }
+
+    &__currency-note {
+        font-size: 1.8vw;
+        font-weight: normal;   
+    }
+
+    &__period {
+        color: #818b95;
+    }
+
+    &__heading,
+    &__price,
+    &__currency-note,
+    &__period {
+        &_best-offer {
+            color: $light-text-color;
+        }
+    }
+
+    &__description-list {
+        padding: 1.94vw 0 1.11vw;
+        margin: 0;
+        list-style: none;
+    }
+
+    &__item {
+        padding: 0.9vw 0;
+        border-top: 1px solid #e2e9f0;
+        color: #b5bbc1;  
+        
+        &_best-offer {
+            color: $smooth-light-text-color;
+            border-top: 1px solid #8eb8e2;
+
+        } 
+    }
+
+
+}
+
+.page-button {
+    &_choos-price{
+        width: 50%;
+    }
+}
