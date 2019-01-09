@@ -33,11 +33,8 @@
 }
 
 .section-boost-up {
-  background-color: #709dca;
-}
-
-.section-boost-up__content {
   padding-top: 6.47vw;
+  background-color: #709dca;
 }
 
 .section-boost-up__form {
@@ -50,11 +47,7 @@
   background-color: #fff;
 }
 
-.boost-up_form_button_link {
-  padding: 10px;
-}
-
-.boost-up_slider_block {
+.section-boost-up__slider-block {
   position: absolute;
   bottom: 30%;
   left: 50%;
@@ -62,7 +55,7 @@
           transform: translateX(-50%);
 }
 
-.boost-up-slider_img {
+.section-boost-up__image {
   width: 90%;
   max-width: 100%;
 }
