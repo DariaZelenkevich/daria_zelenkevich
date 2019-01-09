@@ -1,3 +1,7 @@
+.page-header {
+  padding: 1.2vw 0;
+}
+
 .page-header__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5,7 +9,6 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 1.2vw 0;
 }
 
 .logo_top {
@@ -27,6 +30,41 @@
   border-radius: 3px;
   color: #fff;
   background-color: #ffbb42;
+}
+
+.section-boost-up {
+  background-color: #709dca;
+}
+
+.section-boost-up__content {
+  padding-top: 6.47vw;
+}
+
+.section-boost-up__form {
+  padding: 1.8vw 0 20.6vw;
+}
+
+.section-boost-up__slider-wrapper {
+  position: relative;
+  margin-top: 5.29vw;
+  background-color: #fff;
+}
+
+.boost-up_form_button_link {
+  padding: 10px;
+}
+
+.boost-up_slider_block {
+  position: absolute;
+  bottom: 30%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.boost-up-slider_img {
+  width: 90%;
+  max-width: 100%;
 }
 
 @font-face {

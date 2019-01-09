@@ -1,9 +1,12 @@
 @import "./variables.scss";
 
-.page-header__content {
-    display: flex;
-    justify-content: space-between;
+.page-header {
     padding: 1.2vw 0;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .logo_top {

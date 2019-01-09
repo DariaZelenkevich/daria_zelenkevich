@@ -1,0 +1,44 @@
+@import "./variables.scss";
+
+.section-boost-up {
+    background-color: $cold-background-color;
+
+    &__content {
+        padding-top: 6.47vw;
+    }
+
+    &__form {
+        padding: 1.8vw 0 20.6vw;
+
+    }
+
+    &__link {
+        border: 1px solid #ffbb42;
+    }
+
+    &__slider-wrapper {
+
+    }
+}
+
+.boost-up_form_button_link{
+    padding: 10px;
+}
+
+.boost-up_slider-wrapper{
+    position: relative;
+    margin-top: 5.29vw;
+    background-color: #fff;
+}
+
+.boost-up_slider_block {
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.boost-up-slider_img {
+    width: 90%;
+    max-width: 100%;
+}
