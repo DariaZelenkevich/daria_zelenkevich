@@ -129,7 +129,7 @@
     display: inline-block;
     border: none;
     border-radius: 3px;
-    background-color: $warm-button-background-color;
+    background-color: $light-warm-background-color;
 
     &__link {
         display: inline-block;
@@ -152,4 +152,4 @@
 @import "./boost-up.scss";
 @import "./our-services.scss";
 @import "./about-us.scss";
-@import "./choos-price.scss";
+@import "./choos-price.scss"; 
