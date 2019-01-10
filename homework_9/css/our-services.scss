@@ -61,7 +61,19 @@
     
     &__text {
         line-height: 1.5;
+    } 
+}
+
+@media (max-width: 940px) {
+    .section-our-services {
+        &__item {
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        &__icon {
+            padding-bottom: 15px;
+        }
     }
-    
 
 }
