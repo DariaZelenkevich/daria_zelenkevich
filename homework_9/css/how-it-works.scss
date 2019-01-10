@@ -70,3 +70,27 @@
     }
 }
 
+@media (max-width: 580px) {
+    .section-how-it-works {
+        &__image-arrow1,
+        &__image-arrow2,
+        &__image-arrow3 {
+            display: none;
+        }
+
+        &__cards {
+            flex-wrap: wrap;
+        }
+
+        &__step-card {
+            width: 50%;
+            margin-top: 20px;
+        }
+
+        &__step-card:nth-of-type(1),
+        &__step-card:nth-of-type(2) {
+            margin-top: 0;
+        }
+
+    }
+}

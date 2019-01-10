@@ -460,6 +460,22 @@
   border-top: 1px solid #8eb8e2;
 }
 
+@media (max-width: 580px) {
+  .section-choos-price__price-card-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section-choos-price__price-card {
+    width: 40%;
+    max-width: 40%;
+  }
+  .section-choos-price__price-card:not(:first-of-type) {
+    margin-top: 20px;
+  }
+}
+
 .section-how-it-works {
   padding: 9.11vw 0 8.76vw;
 }
@@ -524,6 +540,23 @@
 @media (max-width: 940px) {
   .section-how-it-works__image-arrow1, .section-how-it-works__image-arrow2, .section-how-it-works__image-arrow3 {
     width: 10%;
+  }
+}
+
+@media (max-width: 580px) {
+  .section-how-it-works__image-arrow1, .section-how-it-works__image-arrow2, .section-how-it-works__image-arrow3 {
+    display: none;
+  }
+  .section-how-it-works__cards {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .section-how-it-works__step-card {
+    width: 50%;
+    margin-top: 20px;
+  }
+  .section-how-it-works__step-card:nth-of-type(1), .section-how-it-works__step-card:nth-of-type(2) {
+    margin-top: 0;
   }
 }
 
