@@ -178,6 +178,28 @@
   text-align: center;
 }
 
+@media (max-width: 710px) {
+  .page-button__link_boost-up {
+    font-size: 7px;
+  }
+}
+
+@media (max-width: 580px) {
+  .client-form {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .client-form__wrapper {
+    margin-top: 10px;
+  }
+  .page-button__link_boost-up {
+    font-size: 10px;
+  }
+  .page-button_newsletter, .page-button_boost-up {
+    margin-top: 10px;
+  }
+}
+
 .page-header {
   padding: 1.2vw 0;
 }
