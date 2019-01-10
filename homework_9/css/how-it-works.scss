@@ -60,3 +60,13 @@
     }
 }
 
+@media (max-width: 940px) {
+    .section-how-it-works {
+        &__image-arrow1,
+        &__image-arrow2,
+        &__image-arrow3 {
+            width: 10%;
+        }
+    }
+}
+

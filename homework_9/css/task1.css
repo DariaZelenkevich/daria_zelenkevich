@@ -219,6 +219,13 @@
   max-width: 100%;
 }
 
+@media (max-width: 1024px) {
+  /* boost-up */
+  __form {
+    padding: 1.8vw 0 30vw;
+  }
+}
+
 .section-our-services {
   padding: 6.2vw 0 9.11vw;
 }
@@ -243,7 +250,14 @@
           justify-content: space-between;
   width: 50%;
   margin-top: 4.7vw;
+}
+
+.section-our-services__item:nth-of-type(odd) {
   padding-right: 4.2vw;
+}
+
+.section-our-services__item:nth-of-type(even) {
+  padding-left: 4.2vw;
 }
 
 .section-our-services__item:nth-of-type(1), .section-our-services__item:nth-of-type(2) {
@@ -280,6 +294,21 @@
   line-height: 1.5;
 }
 
+@media (max-width: 940px) {
+  .section-our-services__item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .section-our-services__icon {
+    padding-bottom: 15px;
+  }
+}
+
 .section-about-us {
   background-color: #ffc155;
   display: -webkit-box;
@@ -298,6 +327,7 @@
 
 .section-about-us__content {
   max-width: 850px;
+  width: 50%;
   margin: 0 auto;
 }
 
@@ -317,6 +347,24 @@
 .section-about-us__heading {
   text-align: left;
   margin-bottom: 1.6vw;
+}
+
+@media (max-width: 1024px) {
+  .section-about-us {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section-about-us__image, .section-about-us__content, .section-about-us__text-wrapper {
+    width: 100%;
+  }
+  .section-about-us__text-wrapper, .section-about-us__heading {
+    text-align: center;
+  }
+  .section-about-us__text-wrapper {
+    padding: 9.6vw 4.7vw 10.3vw;
+  }
 }
 
 .section-choos-price {
@@ -464,6 +512,12 @@
   color: #7b7b7b;
 }
 
+@media (max-width: 940px) {
+  .section-how-it-works__image-arrow1, .section-how-it-works__image-arrow2, .section-how-it-works__image-arrow3 {
+    width: 10%;
+  }
+}
+
 .section-happy-clients {
   background-color: #ffc155;
   padding: 8.2vw 0 9.4vw;
@@ -577,6 +631,15 @@
 
 .section-happy-clients__author-post {
   color: #99a9ae;
+}
+
+@media (max-width: 1030px) {
+  .section-happy-clients__testimonial:nth-of-type(odd) {
+    margin-right: 10px;
+  }
+  .section-happy-clients__testimonial:nth-of-type(even) {
+    margin-left: 10px;
+  }
 }
 
 .section-newsletter {

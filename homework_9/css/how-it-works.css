@@ -59,10 +59,9 @@
   color: #7b7b7b;
 }
 
-.page-button_how-it-works {
-  display: block;
-  width: 14%;
-  margin: 0 auto;
-  text-align: center;
+@media (max-width: 940px) {
+  .section-how-it-works__image-arrow1, .section-how-it-works__image-arrow2, .section-how-it-works__image-arrow3 {
+    width: 10%;
+  }
 }
 /*# sourceMappingURL=how-it-works.css.map */
