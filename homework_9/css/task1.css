@@ -191,6 +191,15 @@
           justify-content: space-between;
 }
 
+@media (max-width: 580px) {
+  .page-header__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .section-boost-up {
   padding-top: 6.47vw;
   background-color: #709dca;

@@ -8,3 +8,11 @@
         justify-content: space-between;
     }
 }
+
+@media (max-width: 580px) {
+    .page-header {
+        &__content {
+            flex-direction: column;
+        }
+    }
+}
