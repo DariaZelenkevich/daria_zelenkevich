@@ -10,29 +10,4 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
-.logo_top {
-  width: 4.3%;
-}
-
-.logo_top .logo__image {
-  width: 100%;
-  max-width: 100%;
-}
-
-.nav-menu_top {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
-.nav-menu__link_top {
-  color: #868686;
-}
-
-.nav-menu__link_top:hover {
-  border-radius: 3px;
-  color: #fff;
-  background-color: #ffbb42;
-}
 /*# sourceMappingURL=page-header.css.map */

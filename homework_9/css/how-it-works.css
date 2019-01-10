@@ -59,33 +59,7 @@
   color: #7b7b7b;
 }
 
-.step-card {
-  display: inline-block;
-  width: 24%;
-  padding: 0 3%;
-  text-align: center;
-}
-
-.fa-step-card_image {
-  font-size: 57px;
-  text-shadow: -2px 0 #709dca, 0 2px #709dca, 2px 0 #709dca, 0 -2px #709dca;
-}
-
-.step-card_heading {
-  padding: 6vw 0 1.64vw;
-  font-family: "Lato";
-  font-size: 15px;
-  font-weight: 700;
-  line-height: 1;
-  color: #394b50;
-  text-transform: uppercase;
-}
-
-.step-card_text {
-  color: #7b7b7b;
-}
-
-.how-it-works_button {
+.page-button_how-it-works {
   display: block;
   width: 14%;
   margin: 0 auto;

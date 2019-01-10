@@ -33,24 +33,4 @@
         text-align: left;
         margin-bottom: 1.6vw;
     }
-
-    &__button {
-    }
-}
-
-.page-button {
-    
-    &_about-us {
-        width: 29%;
-        border: 1px solid #e7ad48;
-        background-color: $warm-background-color;   
-
-    }
-
-    &____link{
-        &_about-us {
-            padding: 1vw;
-        }
-    }
-
 }

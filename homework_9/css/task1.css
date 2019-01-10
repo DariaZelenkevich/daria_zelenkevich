@@ -1,23 +1,3 @@
-@font-face {
-  font-family: "Gotham-Black";
-  src: url("../fonts/Gotham-Black.ttf");
-}
-
-@font-face {
-  font-family: "Lato";
-  src: url("../fonts/Lato-Regular.ttf");
-}
-
-@font-face {
-  font-family: "Open Sans";
-  src: url("../fonts/OpenSans-Regular.ttf");
-}
-
-@font-face {
-  font-family: "Brandon Grotesque";
-  src: url("../fonts/BrandonGrotesque-Thin.ttf");
-}
-
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -34,6 +14,15 @@
   max-width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.logo_top {
+  width: 4.3%;
+}
+
+.logo_top .logo__image {
+  width: 100%;
+  max-width: 100%;
 }
 
 .heading,
@@ -87,6 +76,22 @@
   text-decoration: none;
   text-transform: uppercase;
   color: #394b50;
+}
+
+.nav-menu__link_top {
+  color: #868686;
+}
+
+.nav-menu__link_top:hover {
+  border-radius: 3px;
+  color: #fff;
+  background-color: #ffbb42;
+}
+
+.nav-menu_top {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .client-form {
@@ -144,8 +149,33 @@
   color: #fff;
 }
 
+.page-button__link_newsletter, .page-button__link_boost-up {
+  padding: 10px;
+}
+
+.page-button__link_about-us {
+  padding: 1vw;
+}
+
 .page-button__link:hover {
   text-decoration: underline;
+}
+
+.page-button_about-us {
+  width: 29%;
+  border: 1px solid #e7ad48;
+  background-color: #ffc155;
+}
+
+.page-button_choos-price {
+  width: 50%;
+}
+
+.page-button_how-it-works {
+  display: block;
+  width: 14%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .page-header {
@@ -159,31 +189,6 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.logo_top {
-  width: 4.3%;
-}
-
-.logo_top .logo__image {
-  width: 100%;
-  max-width: 100%;
-}
-
-.nav-menu_top {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
-.nav-menu__link_top {
-  color: #868686;
-}
-
-.nav-menu__link_top:hover {
-  border-radius: 3px;
-  color: #fff;
-  background-color: #ffbb42;
 }
 
 .section-boost-up {
@@ -314,16 +319,6 @@
   margin-bottom: 1.6vw;
 }
 
-.page-button_about-us {
-  width: 29%;
-  border: 1px solid #e7ad48;
-  background-color: #ffc155;
-}
-
-.page-button____link_about-us {
-  padding: 1vw;
-}
-
 .section-choos-price {
   padding: 8.05vw 0 9.64vw;
   font-size: 0;
@@ -408,10 +403,6 @@
   border-top: 1px solid #8eb8e2;
 }
 
-.page-button_choos-price {
-  width: 50%;
-}
-
 .section-how-it-works {
   padding: 9.11vw 0 8.76vw;
 }
@@ -471,13 +462,6 @@
 
 .section-how-it-works__text {
   color: #7b7b7b;
-}
-
-.page-button_how-it-works {
-  display: block;
-  width: 14%;
-  margin: 0 auto;
-  text-align: center;
 }
 
 .section-happy-clients {
@@ -618,10 +602,6 @@
   width: 100%;
 }
 
-.page-button__link_newsletter {
-  padding: 10px;
-}
-
 .page-footer {
   border-top: 1px solid #e3e7ec;
   padding-top: 4vw;
@@ -661,5 +641,25 @@
   line-height: 1;
   color: #fff;
   background-color: #709dca;
+}
+
+@font-face {
+  font-family: "Gotham-Black";
+  src: url("../fonts/Gotham-Black.ttf");
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../fonts/Lato-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Brandon Grotesque";
+  src: url("../fonts/BrandonGrotesque-Thin.ttf");
 }
 /*# sourceMappingURL=task1.css.map */
