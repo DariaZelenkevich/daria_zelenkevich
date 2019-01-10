@@ -87,3 +87,22 @@
         } 
     }
 }
+
+@media (max-width: 580px) {
+
+    .section-choos-price {
+
+        &__price-card-list {
+            flex-direction: column;
+        }
+
+        &__price-card {
+            width: 40%;
+            max-width: 40%;
+        }
+
+        &__price-card:not(:first-of-type) {
+            margin-top: 20px;
+        }
+    }
+}

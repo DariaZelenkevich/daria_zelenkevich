@@ -81,4 +81,20 @@
   color: #c2e1ff;
   border-top: 1px solid #8eb8e2;
 }
+
+@media (max-width: 580px) {
+  .section-choos-price__price-card-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section-choos-price__price-card {
+    width: 40%;
+    max-width: 40%;
+  }
+  .section-choos-price__price-card:not(:first-of-type) {
+    margin-top: 20px;
+  }
+}
 /*# sourceMappingURL=choos-price.css.map */
