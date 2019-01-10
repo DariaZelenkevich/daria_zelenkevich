@@ -37,4 +37,22 @@
   text-align: left;
   margin-bottom: 1.6vw;
 }
+
+@media (max-width: 1024px) {
+  .section-about-us {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .section-about-us__image, .section-about-us__content, .section-about-us__text-wrapper {
+    width: 100%;
+  }
+  .section-about-us__text-wrapper, .section-about-us__heading {
+    text-align: center;
+  }
+  .section-about-us__text-wrapper {
+    padding: 9.6vw 4.7vw 10.3vw;
+  }
+}
 /*# sourceMappingURL=about-us.css.map */

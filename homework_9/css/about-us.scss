@@ -35,3 +35,26 @@
         margin-bottom: 1.6vw;
     }
 }
+
+@media (max-width: 1024px) {
+
+    .section-about-us {
+        flex-direction: column;
+
+        &__image,
+        &__content,
+        &__text-wrapper {
+            width: 100%;
+        }
+
+        &__text-wrapper,
+        &__heading {
+            text-align: center;
+        }
+
+        &__text-wrapper {
+            padding: 9.6vw 4.7vw 10.3vw;
+        }
+
+    }
+}
