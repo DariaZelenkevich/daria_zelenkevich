@@ -27,8 +27,7 @@
 }
 
 @media (max-width: 1024px) {
-  /* boost-up */
-  __form {
+  .section-boost-up__form {
     padding: 1.8vw 0 30vw;
   }
 }
