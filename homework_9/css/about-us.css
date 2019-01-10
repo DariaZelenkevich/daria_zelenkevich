@@ -16,6 +16,7 @@
 
 .section-about-us__content {
   max-width: 850px;
+  width: 50%;
   margin: 0 auto;
 }
 
