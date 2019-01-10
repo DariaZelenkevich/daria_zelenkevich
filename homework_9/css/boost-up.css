@@ -25,4 +25,11 @@
   width: 90%;
   max-width: 100%;
 }
+
+@media (max-width: 1024px) {
+  /* boost-up */
+  __form {
+    padding: 1.8vw 0 30vw;
+  }
+}
 /*# sourceMappingURL=boost-up.css.map */
