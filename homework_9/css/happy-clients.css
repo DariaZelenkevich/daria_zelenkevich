@@ -112,4 +112,13 @@
 .section-happy-clients__author-post {
   color: #99a9ae;
 }
+
+@media (max-width: 1030px) {
+  .section-happy-clients__testimonial:nth-of-type(odd) {
+    margin-right: 10px;
+  }
+  .section-happy-clients__testimonial:nth-of-type(even) {
+    margin-left: 10px;
+  }
+}
 /*# sourceMappingURL=happy-clients.css.map */
