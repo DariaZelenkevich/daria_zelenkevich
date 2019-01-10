@@ -121,4 +121,25 @@
     margin-left: 10px;
   }
 }
+
+@media (max-width: 580px) {
+  .section-happy-clients__testimonials {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .section-happy-clients__testimonial:nth-of-type(odd) {
+    margin-right: 0;
+  }
+  .section-happy-clients__testimonial:nth-of-type(even) {
+    margin-left: 0;
+  }
+  .section-happy-clients__testimonial:not(:first-of-type) {
+    margin-top: 15px;
+  }
+}
 /*# sourceMappingURL=happy-clients.css.map */

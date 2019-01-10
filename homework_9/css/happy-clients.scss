@@ -128,3 +128,29 @@
         }
     }
 }
+
+@media (max-width: 580px) {
+
+    .section-happy-clients {
+        &__testimonials {
+            flex-direction: column;
+            align-items: center; 
+        }
+
+        &__testimonial {
+            max-width: 70%;
+        }
+
+        &__testimonial:nth-of-type(odd) {
+            margin-right: 0;
+        }
+    
+        &__testimonial:nth-of-type(even) {
+            margin-left: 0;
+        }
+
+        &__testimonial:not(:first-of-type) {
+            margin-top: 15px;
+        }
+    }
+}
