@@ -1,7 +1,8 @@
 @import "./variables.scss";
 
 .section-our-services {
-    padding: 6.2vw 0 9.11vw;
+    padding-top: get_vw_size(203);
+    padding-bottom: get_vw_size(155);
 
     &__list {
         padding-top: 5.47vw;
