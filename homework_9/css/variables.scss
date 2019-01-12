@@ -22,3 +22,11 @@ $warm-background-color: #ffc155;
 
 $light-warm-background-color: #ffbb42;
 
+
+//mixins & functions
+
+@function get_vw_size($size) {
+    $screen: 1552;
+    @return($size / $screen) * 100vw;
+}
+
