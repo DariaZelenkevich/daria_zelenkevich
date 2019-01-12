@@ -132,6 +132,9 @@
         -ms-flex-align: center;
             align-items: center;
   }
+  .section-happy-clients__testimonial {
+    max-width: 70%;
+  }
   .section-happy-clients__testimonial:nth-of-type(odd) {
     margin-right: 0;
   }
