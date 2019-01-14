@@ -1,7 +1,6 @@
 @import "./variables.scss";
 
 .section-boost-up {
-    $self: &;
     padding-top: 6.47vw;
     background-color: $cold-background-color;
 
@@ -18,14 +17,12 @@
         bottom: get_vw_size(-61);
         left: 50%;
         transform: translateX(-50%);
-
-        &:hover {
-            #{$self}__slider-left-arrow,
-            #{$self}__slider-right-arrow {
-                display: block;
-            }
-        }
     }
+}
+
+
+.slider {
+    $self: &;
 
     &__slider-block,
     &__slider-controls {
@@ -34,14 +31,22 @@
 
     &__slider-block {
         position: relative;
+
+        &:hover {
+            #{$self}__left-arrow,
+            #{$self}__right-arrow {
+                display: block;
+            }
+        }
+
     }
 
-    &__slider-background-image {
+    &__background-image {
         height: get_vw_size(343);
         width: get_vw_size(647); 
     }
 
-    &__slider-image {
+    &__image {
         position: absolute;
         top: get_vw_size(18);
         left: get_vw_size(102);
@@ -49,8 +54,8 @@
         width: get_vw_size(445);
     }
 
-    &__slider-left-arrow,
-    &__slider-right-arrow {
+    &__left-arrow,
+    &__right-arrow {
         position: absolute;
         top: get_vw_size(139);
         display: none;
@@ -58,11 +63,11 @@
         font-size: get_vw_size(25);
     }
 
-    &__slider-left-arrow {
+    &__left-arrow {
         left: get_vw_size(40);
     }
 
-    &__slider-right-arrow {
+    &__right-arrow {
         right: get_vw_size(40);
     }
     
@@ -73,16 +78,15 @@
         transform: translateX(-50%);    
     }
 
-    &__slider-controler {
+    &__controler {
         display: inline-block;
         font-size: get_vw_size(12);
         color: #dedfe0;
     }
 
-    &__slider-controler:hover {
+    &__controler:hover {
         color: #1ca8dd;
     }
-    
 }
 
 @media (max-width: 1024px) {
