@@ -179,6 +179,51 @@
     }
 }
 
+.geo-tag {
+    position: relative;
+
+    &__сontact-details {
+        position: absolute;
+        top: get_vw_size(65);
+        width: get_vw_size(142);
+        color: #aeb7ba;
+        text-align: center;
+        font-size: get_vw_size(13);
+    }
+
+    &__heading {
+        margin-bottom: get_vw_size(20);
+        font-family: "Lato";
+        color: $light-text-color;
+        font-size: get_vw_size(15);
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    &__e-mail {
+        color: $light-warm-background-color;
+    }
+
+    &__board {
+        position: relative;
+        width: get_vw_size(292);
+        height: get_vw_size(292);
+        background-color: $dark-text-color;
+        border-radius: 50%;
+    }
+
+    &__board::after {
+        content: "";
+        position: absolute;
+        right: 43%; 
+        top: 100%;
+        border: get_vw_size(10) solid transparent;
+        border-left: get_vw_size(20) solid $dark-text-color;
+        transform: rotate(87deg);
+    }
+
+}
+
 
 @media (max-width: 710px) {
 
