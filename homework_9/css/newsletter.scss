@@ -1,10 +1,10 @@
 @import "./variables.scss";
 
 .section-newsletter {
-    padding-top: 8.8vw;
+    padding-top: get_vw_size(154);
 
     &__form {
-        margin-top: 2.4vw;
+        margin-top: get_vw_size(38);
         padding: 0 2vw;
         width: 90%;
     }
@@ -15,9 +15,14 @@
         align-self: center;     
     }
 
-    &__image {
-        margin-top: 3.2vw;
-        max-width: 100%;
-        width: 100%; 
+    &__map {
+        height: get_vw_size(549);
+        margin-top: get_vw_size(53);
+        padding: 0 get_vw_size(34);
+        background-image: url("../img/newsletter_background.png");
+        background-size: contain ;
+        background-position: center center;
+        background-repeat: no-repeat;
     }
+
 }
