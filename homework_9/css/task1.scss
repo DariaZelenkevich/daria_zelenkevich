@@ -1,16 +1,3 @@
-@import "./variables.scss";
-@import "./common-rules.scss";
-@import "./page-header.scss";
-@import "./boost-up.scss";
-@import "./our-services.scss";
-@import "./about-us.scss";
-@import "./choos-price.scss"; 
-@import "./how-it-works.scss"; 
-@import "./happy-clients.scss";
-@import "./newsletter.scss";
-@import "./page-footer.scss";
-
-
 // fonts
 @font-face {
     font-family: "Gotham-Black";
@@ -31,3 +18,14 @@
     font-family: "Brandon Grotesque";
     src: url("../fonts/BrandonGrotesque-Thin.ttf")
 }
+
+@import "./common-rules.scss";
+@import "./page-header.scss";
+@import "./boost-up.scss";
+@import "./our-services.scss";
+@import "./about-us.scss";
+@import "./choos-price.scss"; 
+@import "./how-it-works.scss"; 
+@import "./happy-clients.scss";
+@import "./newsletter.scss";
+@import "./page-footer.scss";
