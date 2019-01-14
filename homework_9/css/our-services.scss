@@ -1,6 +1,8 @@
 @import "./variables.scss";
 
 .section-our-services {
+    $self: &;
+
     padding-top: get_vw_size(203);
     padding-bottom: get_vw_size(155);
 
@@ -16,6 +18,11 @@
         justify-content: space-between;
         width: 50%;
         margin-top: 4.7vw;
+        &:hover {
+            #{$self}__icon-image {
+                text-shadow: -2px 0 #f6772c, 0 2px #f6772c, 2px 0 #f6772c, 0 -2px #f6772c;
+            }
+        }
     }
 
     &__item:nth-of-type(odd) {
@@ -41,10 +48,6 @@
     &__icon-image {
         font-size: 44px;
         text-shadow: -2px 0 $cold-background-color, 0 2px $cold-background-color, 2px 0 $cold-background-color, 0 -2px $cold-background-color;    
-    }
-
-    &__icon-image:hover{
-        text-shadow: -2px 0 #f6772c, 0 2px #f6772c, 2px 0 #f6772c, 0 -2px #f6772c;
     }
 
     &__item-wrapper {
