@@ -186,12 +186,15 @@
     &__сontact-details {
         position: absolute;
         top: get_vw_size(65);
-        left: get_vw_size(69);
-        width: get_vw_size(142);
+        left: 50%;
+        transform: translateX(-50%);
         z-index: 2;
+        width: get_vw_size(142);
+        padding: 0 2px;
         color: #aeb7ba;
         text-align: center;
         font-size: get_vw_size(13);
+        line-height: 1.5;
     }
 
     &__heading {
