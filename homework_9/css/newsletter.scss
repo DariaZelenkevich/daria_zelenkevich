@@ -16,6 +16,7 @@
     }
 
     &__map {
+        position: relative;
         height: get_vw_size(549);
         margin-top: get_vw_size(53);
         padding: 0 get_vw_size(34);
@@ -25,4 +26,9 @@
         background-repeat: no-repeat;
     }
 
+    &__geo-tag-wrapper {
+        position: absolute;
+        top: get_vw_size(40);
+        left: get_vw_size(412);
+    }
 }
