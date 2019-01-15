@@ -215,11 +215,11 @@
     &__board::after {
         content: "";
         position: absolute;
-        right: 46%; 
+        right: 45%; 
         top: 100%;
         border: get_vw_size(10) solid transparent;
         border-left: get_vw_size(20) solid $dark-text-color;
-        transform: rotate(87deg);
+        transform: rotate(90deg);
     }
 
 }
