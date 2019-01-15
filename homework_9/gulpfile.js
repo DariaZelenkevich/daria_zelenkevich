@@ -16,8 +16,8 @@
 не забудьте удалить оба плагина для vscode - они больше не нужны + vscode будет загружаться чуть быстрее (т.к. ему не надо инитить свои плагины)
 */
 
-const path_to_main_scss_file = 'css/task1.scss'; // путь до главного scss файла
-const scss_path_to_watch = 'css/*.scss'; // наблюдать за изменениями во всех папках в папке 'styles', scss с любым именем файла
+const path_to_main_scss_file = 'styles/task1.scss'; // путь до главного scss файла
+const scss_path_to_watch = 'styles/*.scss'; // наблюдать за изменениями во всех папках в папке 'styles', scss с любым именем файла
 const destination_path = 'dist/'; // папка куда положить итоговый css
 const final_css_name = 'style.css'; // имя итоговогой файла
 
