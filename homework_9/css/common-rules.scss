@@ -185,7 +185,9 @@
     &__сontact-details {
         position: absolute;
         top: get_vw_size(65);
+        left: get_vw_size(69);
         width: get_vw_size(142);
+        z-index: 2;
         color: #aeb7ba;
         text-align: center;
         font-size: get_vw_size(13);
@@ -215,7 +217,7 @@
     &__board::after {
         content: "";
         position: absolute;
-        right: 43%; 
+        right: 46%; 
         top: 100%;
         border: get_vw_size(10) solid transparent;
         border-left: get_vw_size(20) solid $dark-text-color;
