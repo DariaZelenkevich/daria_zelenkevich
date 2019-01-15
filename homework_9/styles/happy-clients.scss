@@ -2,7 +2,7 @@
 
 .section-happy-clients {
     background-color: $warm-background-color;
-    padding: 8.2vw 0 9.4vw;
+    padding: get_vw_size(141) 0 get_vw_size(160);
 
     &__testimonials {
         display: flex;
@@ -16,7 +16,7 @@
         display: flex;
         max-width: 48%;
         margin-top: 20px;
-        padding: 2.6vw 0.6vw 3vw 1.76vw;
+        padding: get_vw_size(43) get_vw_size(10) get_vw_size(50) get_vw_size()30;
         vertical-align: top;
         font-size: 13px;
         background-color: $light-text-color;

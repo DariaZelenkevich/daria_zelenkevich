@@ -52,7 +52,7 @@
 }
 
 .heading-text {
-    margin-top: 0.6vw;
+    margin-top: get_vw_size(2);
     font-size: 16px;
     font-weight: 300;
     line-height: 1;
@@ -69,7 +69,7 @@
 
     &__link {
         display: inline-block;
-        padding: 0.72vw 1.2vw;
+        padding: get_vw_size(12) get_vw_size(21);
         font-family: "Lato";
         font-size: 10px;
         font-weight: 400;
@@ -138,7 +138,7 @@
 
     &__link {
         display: inline-block;
-        padding: 0.94vw; 
+        padding: get_vw_size(16); 
         font-size: 10px;
         line-height: 1;
         text-align: center;

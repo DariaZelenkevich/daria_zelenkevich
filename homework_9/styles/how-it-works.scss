@@ -1,7 +1,7 @@
 @import "./variables.scss";
 
 .section-how-it-works {
-    padding: 9.11vw 0 8.76vw;
+    padding: get_vw_size(155) 0 get_vw_size(149);
 
     &__cards {
         position: relative;

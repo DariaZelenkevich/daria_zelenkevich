@@ -6,7 +6,7 @@
     text-align: center;
 
     &__contacts {
-        padding: 1.7vw 0 3.1vw;  
+        padding: get_vw_size(29) 0 get_vw_size(53);  
     }
 
     &__phone-number {
