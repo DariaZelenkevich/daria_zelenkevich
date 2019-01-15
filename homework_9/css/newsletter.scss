@@ -26,9 +26,19 @@
         background-repeat: no-repeat;
     }
 
-    &__geo-tag-wrapper {
+    &__geo-tag-wrapper,
+    &__logo-wrapper {
         position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &__geo-tag-wrapper {
+
         top: get_vw_size(40);
-        left: get_vw_size(412);
+    }
+
+    &__logo-wrapper {
+        top: get_vw_size(338);
     }
 }
