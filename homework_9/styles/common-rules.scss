@@ -275,6 +275,8 @@
 
     .page-button {
         &__link {
+            padding: 10px;
+            
             &_boost-up {
                 font-size: 10px;
             }
@@ -284,5 +286,10 @@
         &_boost-up {
             margin-top: 10px;
         }
+
+        &_how-it-works {
+            width: 50%;
+        }
+    
     }
 }
