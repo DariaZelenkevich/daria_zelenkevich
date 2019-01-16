@@ -1,8 +1,7 @@
 @import "./variables.scss";
 
 .section-choos-price {
-    padding: 8.05vw 0 9.64vw;
-    font-size: 0;
+    padding: get_vw_size(137) 0 get_vw_size(164);
     background-color: $light-cold-background-color;
 
     &__heading-text {
@@ -39,7 +38,7 @@
 
     &__heading {
         padding-bottom: 1.76vw;
-        font-size: 25px;
+        font-size: get_vw_size(25);
         line-height: 1;
         font-weight: 300;
         color: #818b95;  
