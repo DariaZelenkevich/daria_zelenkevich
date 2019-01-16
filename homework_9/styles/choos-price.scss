@@ -38,7 +38,7 @@
 
     &__heading {
         padding-bottom: 1.76vw;
-        font-size: get_vw_size(25);
+        font-size: 25px;
         line-height: 1;
         font-weight: 300;
         color: #818b95;  
@@ -96,8 +96,9 @@
         }
 
         &__price-card {
-            width: 40%;
-            max-width: 40%;
+            width: 70%;
+            max-width: 70%;
+            padding: 8vw 1.82vw 7vw;
         }
 
         &__price-card:not(:first-of-type) {
