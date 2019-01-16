@@ -9,12 +9,6 @@
         width: 90%;
     }
 
-    &__name,
-    &__email {
-        margin-right: 10px;
-        align-self: center;     
-    }
-
     &__map {
         position: relative;
         height: get_vw_size(549);
