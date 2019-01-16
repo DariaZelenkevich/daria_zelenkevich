@@ -138,7 +138,7 @@
         }
 
         &__testimonial {
-            max-width: 70%;
+            max-width: 90%;
         }
 
         &__testimonial:nth-of-type(odd) {
@@ -151,6 +151,10 @@
 
         &__testimonial:not(:first-of-type) {
             margin-top: 15px;
+        }
+
+        &__quote-decoration-wraper {
+           margin-right: 2px;
         }
     }
 }
