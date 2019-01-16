@@ -1,4 +1,4 @@
-@import "./variables.scss";
+@import "./_variables.scss";
 
 * {
     box-sizing: border-box;
@@ -101,11 +101,10 @@
     justify-content: center;
     color: $light-gray-text-color;
 
-
     &__wrapper {
         position: relative;
         display: inline-block;
-        max-width: 100%;    
+        margin-right: 10px;
     }
 
     &__name-pic,
@@ -118,9 +117,6 @@
     }
 
     &__item {
-        max-width: 100%;
-        margin-right: 10px;
-        align-self: center;
         padding: 10px 10px 10px 40px;
         border: 1px solid #cbcbcb;
         font-size: 10px;
@@ -242,15 +238,39 @@
 }
 
 
-@media (max-width: 580px) {
+@media (max-width: 610px) {
 
     .client-form {
 
         flex-wrap: wrap;
+        flex-direction: column;
+        align-items: stretch;
+        
+        &__wrapper,
+        &__item,
+        &__button {
+            max-width: 100%; 
+            width: 100%;   
+            align-self: center;
+        }
 
-        &__wrapper {
+        &__wrapper{
+            margin-right: 0;
+        }
+
+        &__wrapper:not(:first-of-type) {
             margin-top: 10px;
         } 
+
+        &__item {
+            padding-left: 50px;
+        }
+
+        &__name-pic,
+        &__email-pic,
+        &__phone-pic {
+            left: 5%;
+        }
     }
 
     .page-button {
