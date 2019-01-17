@@ -101,18 +101,24 @@
     justify-content: center;
     color: $light-gray-text-color;
 
-    &__wrapper {
+    &__wrapper,
+    &__button {
+        width: 25%;
+    }
+
+    &__wrapper{
         position: relative;
         display: inline-block;
         margin-right: 10px;
     }
+
 
     &__name-pic,
     &__email-pic,
     &__phone-pic {
         position: absolute;
         top: 30%;
-        left: 10%;
+        left: 5%;
         z-index: 1;
     }
 
@@ -121,6 +127,7 @@
         border: 1px solid #cbcbcb;
         font-size: 10px;
         line-height: 1; 
+        width: 100%;
     }
 }
 
@@ -250,7 +257,6 @@
         align-items: stretch;
         
         &__wrapper,
-        &__item,
         &__button {
             max-width: 100%; 
             width: 100%;   
@@ -267,12 +273,6 @@
 
         &__item {
             padding-left: 50px;
-        }
-
-        &__name-pic,
-        &__email-pic,
-        &__phone-pic {
-            left: 5%;
         }
     }
 
