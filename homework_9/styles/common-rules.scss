@@ -201,9 +201,12 @@
         text-transform: uppercase;
     }
 
-    &__e-mail {
+    &__e-mail-link {
         color: $light-warm-background-color;
+        text-decoration: none;
     }
+
+
 
     &__board {
         position: relative;
