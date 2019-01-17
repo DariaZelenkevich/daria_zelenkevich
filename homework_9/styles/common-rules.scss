@@ -312,8 +312,7 @@
 }
 
 
-@media (max-width: 710px) {
-
+@include scale(711px) {
     .page-button {
         &__link {
             &_boost-up {
@@ -321,10 +320,10 @@
             }
         }
     }
+
 }
 
-
-@media (max-width: 580px) {
+@include scale(581px) {
 
     .client-form {
 
@@ -369,6 +368,5 @@
         &_how-it-works {
             width: 50%;
         }
-    
     }
 }

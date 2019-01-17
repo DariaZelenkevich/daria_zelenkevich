@@ -68,7 +68,7 @@
     } 
 }
 
-@media (max-width: 940px) {
+@include scale(941px) {
     .section-our-services {
         &__item {
             flex-direction: column;

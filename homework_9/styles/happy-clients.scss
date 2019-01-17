@@ -116,7 +116,7 @@
     }
 }
 
-@media (max-width: 1030px) {
+@include scale(1031px) {
 
     .section-happy-clients {
         &__testimonial:nth-of-type(odd) {
@@ -129,7 +129,7 @@
     }
 }
 
-@media (max-width: 580px) {
+@include scale(581px) {
 
     .section-happy-clients {
         &__testimonials {

@@ -60,7 +60,7 @@
     }
 }
 
-@media (max-width: 940px) {
+@include scale(941px) {
     .section-how-it-works {
         &__image-arrow1,
         &__image-arrow2,
@@ -70,7 +70,7 @@
     }
 }
 
-@media (max-width: 580px) {
+@include scale(581px) {
     .section-how-it-works {
         &__image-arrow1,
         &__image-arrow2,

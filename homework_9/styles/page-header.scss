@@ -9,7 +9,7 @@
     }
 }
 
-@media (max-width: 580px) {
+@include scale(581px) {
     .page-header {
         &__content {
             flex-direction: column;

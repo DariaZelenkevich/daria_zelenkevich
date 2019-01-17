@@ -1,4 +1,4 @@
-//  text-color
+ //  text-color
 
 $dark-text-color: #394b50;
 
@@ -30,3 +30,20 @@ $light-warm-background-color: #ffbb42;
     @return($size / $screen) * 100vw;
 }
 
+@mixin scale($width, $diff: 'less') {
+    $behaviour: max-width;
+    $screen-width: $width;
+
+    @if ($diff == 'less') {
+        $screen-width: $width - 1;
+    }
+
+    @if ($diff == 'self-above') {
+        $behaviour: min-width;
+    }
+
+    @media screen and (#{$behaviour}: $screen-width) {
+        @content;
+       
+    }   
+}
