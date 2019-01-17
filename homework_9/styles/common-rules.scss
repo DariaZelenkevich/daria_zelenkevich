@@ -110,6 +110,14 @@
         position: relative;
         display: inline-block;
         margin-right: 10px;
+
+        &_newsletter-name {
+            width: 33%;
+        }
+
+        &_newsletter-email {
+            width: 42%;
+        }
     }
 
 
