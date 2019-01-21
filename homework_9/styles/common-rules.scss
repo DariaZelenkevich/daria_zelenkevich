@@ -161,11 +161,19 @@
 }
 
 .form {
+    $form: &;
+
     display: flex;
     justify-content: center;
     width: 80%;
     margin: auto;
     color: $light-gray-text-color;
+
+    &_newsletter {
+        #{$form}__row:last-child{
+            width: 50%;
+        }
+    }
 
     &__row {
         display: flex;
@@ -192,6 +200,24 @@
             & + & {
                 margin-left: 0;
                 margin-top: 10px;
+            }
+        }
+
+        &_newsletter {
+
+            #{$form}__row:last-child{
+                width: 100%;
+            }
+
+            #{$form}__row {
+                flex-wrap: wrap;
+            }
+   
+            #{$form}__item {        
+                & + & {
+                    margin-left: 0;
+                    margin-top: 10px;
+                }
             }
         }
     }
