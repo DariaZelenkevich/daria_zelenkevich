@@ -162,45 +162,87 @@
 
 .form {
     display: flex;
-    margin: auto;
     justify-content: center;
+    width: 80%;
+    margin: auto;
     color: $light-gray-text-color;
 
-    &__wrapper,
-    &__button {
-        width: 25%;
-    }
+    &__row {
+        display: flex;
+        width: 100%;
+        justify-content: center;
 
-    &__wrapper{
-        position: relative;
-        display: inline-block;
-        margin-right: 10px;
-
-        &_newsletter-name {
-            width: 33%;
+        & + & {
+            margin-left: 10px;
         }
-
-        &_newsletter-email {
-            width: 42%;
-        }
-    }
-
-
-    &__name-pic,
-    &__email-pic,
-    &__phone-pic {
-        position: absolute;
-        top: 30%;
-        left: 5%;
-        z-index: 1;
     }
 
     &__item {
-        padding: 10px 10px 10px 40px;
-        border: 1px solid #cbcbcb;
-        font-size: 10px;
-        line-height: 1; 
         width: 100%;
+
+        & + & {
+            margin-left: 10px;
+        }
+    }
+
+    @include scale(779px) {
+        flex-wrap: wrap;
+
+        &__row {
+            & + & {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+        }
+    }
+
+    @include scale(526px) {
+        &__row{
+            flex-wrap: wrap;
+        }
+
+        &__item {        
+            & + & {
+                margin-left: 0;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+.input {
+    position: relative;
+
+    &__field {
+        height: $input_padding*2 + $input_font_size*$input_line_height;
+        width: 100%;
+        padding: $input_padding $input_padding $input_padding $input_icon_size;
+        border: 1px solid #cbcbcb;
+        border-radius: 3px;
+        color: $light-gray-text-color;
+        font-size: $input_font_size;
+        line-height: $input_line_height;
+
+        &::placeholder {
+            color: $light-gray-text-color;
+        }
+
+        &_submit {
+            padding: $input_padding;
+            border: transparent;
+            border-radius: 3px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #fff;
+            background-color: $light-warm-background-color;  
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        bottom: $input_padding;
+        left: $input_icon_size/2;
+        color: #6e6e6e;
     }
 }
 
