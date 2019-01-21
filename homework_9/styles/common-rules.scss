@@ -58,6 +58,8 @@
 }
 
 .nav-menu {
+    $nav-menu: &;
+
     margin: 0;
     padding: 0;
     list-style: none;
@@ -75,22 +77,21 @@
         line-height: 1;
         text-decoration: none; 
         text-transform: uppercase;
-        color: $dark-text-color;
-        
-        &_top {
-            color: $mid-gray-text-color;
-        }
-
-        &_top:hover {
-            border-radius: 3px;
-            color: $light-text-color;
-            background-color: $light-warm-background-color;
-        } 
-
+        color: $dark-text-color;        
     }
 
     &_top {
         align-self: center;
+
+        #{$nav-menu}__link {
+            color: $mid-gray-text-color;
+        }
+
+        #{$nav-menu}__link:hover {
+            border-radius: 3px;
+            color: $light-text-color;
+            background-color: $light-warm-background-color;
+        }
     }
 
 }
