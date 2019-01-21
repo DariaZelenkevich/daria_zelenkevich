@@ -29,15 +29,12 @@
 .heading,
 .heading-text {
     text-align: center;
+    color: $dark-text-color;
 
-    &_light-style {
+
+    &_light {
         color: $light-text-color;
     }
-
-    &_dark-style{
-        color: $dark-text-color;
-    }
-
 }
 
 .heading {
@@ -93,18 +90,17 @@
             background-color: $light-warm-background-color;
         }
     }
-
 }
 
 .slider {
     $self: &;
 
-    &__slider-block,
-    &__slider-controls {
+    &__block,
+    &__controls {
         display: inline-block;
     }
 
-    &__slider-block {
+    &__block {
         position: relative;
 
         &:hover {
@@ -116,7 +112,7 @@
 
     }
 
-    &__background-image {
+    &__background {
         height: get_vw_size(343);
         width: get_vw_size(647); 
     }
@@ -146,7 +142,7 @@
         right: get_vw_size(40);
     }
     
-    &__slider-controls {
+    &__controls {
         position: absolute;
         top: get_vw_size(367);
         left: 50%;
@@ -164,7 +160,7 @@
     }
 }
 
-.client-form {
+.form {
     display: flex;
     margin: auto;
     justify-content: center;

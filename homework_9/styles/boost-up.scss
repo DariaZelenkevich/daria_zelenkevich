@@ -1,6 +1,6 @@
 @import "./variables.scss";
 
-.section-boost-up {
+.boost-up {
     padding-top: 6.47vw;
     background-color: $cold-background-color;
 
@@ -12,7 +12,7 @@
         padding: 1.8vw 0 20.6vw;
     }
 
-    &__slider-wrapper {
+    &__slider {
         position: absolute;
         bottom: get_vw_size(-61);
         left: 50%;
