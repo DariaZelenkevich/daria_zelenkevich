@@ -102,6 +102,15 @@
 
     &__block {
         position: relative;
+    }
+
+    &__background {
+        position: relative;
+        max-width: get_vw_size(647);
+        min-width: get_vw_size(647);
+        min-height: get_vw_size(343);
+        background: url("../img/laptop.png") no-repeat;
+        background-size: cover;
 
         &:hover {
             #{$self}__left-arrow,
@@ -109,12 +118,6 @@
                 display: block;
             }
         }
-
-    }
-
-    &__background {
-        height: get_vw_size(343);
-        width: get_vw_size(647); 
     }
 
     &__image {
@@ -123,6 +126,13 @@
         left: get_vw_size(102);
         height: get_vw_size(264);
         width: get_vw_size(445);
+    }
+
+    &__link {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: vw(80);
     }
 
     &__left-arrow,
