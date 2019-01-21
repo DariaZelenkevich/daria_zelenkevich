@@ -1,6 +1,6 @@
 @import "./variables.scss";
 
-.section-our-services {
+.our-services {
     $self: &;
 
     padding-top: get_vw_size(203);
@@ -69,7 +69,7 @@
 }
 
 @include scale(941px) {
-    .section-our-services {
+    .our-services {
         &__item {
             flex-direction: column;
             justify-content: flex-start;

@@ -1,6 +1,6 @@
 @import "./variables.scss";
 
-.section-choos-price {
+.choos-price {
     padding: get_vw_size(137) 0 get_vw_size(164);
     background-color: $light-cold-background-color;
 
@@ -89,7 +89,7 @@
 
 @include scale(581px) {
 
-    .section-choos-price {
+    .choos-price {
 
         &__price-card-list {
             flex-direction: column;

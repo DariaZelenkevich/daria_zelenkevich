@@ -1,6 +1,6 @@
 @import "./variables.scss";
 
-.section-happy-clients {
+.happy-clients {
     background-color: $warm-background-color;
     padding: get_vw_size(141) 0 get_vw_size(160);
 
@@ -118,7 +118,7 @@
 
 @include scale(1031px) {
 
-    .section-happy-clients {
+    .happy-clients {
         &__testimonial:nth-of-type(odd) {
             margin-right: 10px;
         }
@@ -131,7 +131,7 @@
 
 @include scale(581px) {
 
-    .section-happy-clients {
+    .happy-clients {
         &__testimonials {
             flex-direction: column;
             align-items: center; 

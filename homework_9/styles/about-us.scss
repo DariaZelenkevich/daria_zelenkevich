@@ -1,6 +1,6 @@
 @import "./variables.scss";
 
-.section-about-us {
+.about-us {
     background-color: #ffc155;
     display: flex;
     align-items: stretch;
@@ -37,7 +37,7 @@
 
 @include scale(1024px) {
 
-    .section-about-us {
+    .about-us {
         flex-direction: column;
 
         &__image,

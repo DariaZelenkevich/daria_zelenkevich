@@ -1,6 +1,6 @@
 @import "./variables.scss";
 
-.section-how-it-works {
+.how-it-works {
     padding: get_vw_size(155) 0 get_vw_size(149);
 
     &__cards {
@@ -61,7 +61,7 @@
 }
 
 @include scale(941px) {
-    .section-how-it-works {
+    .how-it-works {
         &__image-arrow1,
         &__image-arrow2,
         &__image-arrow3 {
@@ -71,7 +71,7 @@
 }
 
 @include scale(581px) {
-    .section-how-it-works {
+    .how-it-works {
         &__image-arrow1,
         &__image-arrow2,
         &__image-arrow3 {
