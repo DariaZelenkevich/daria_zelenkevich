@@ -7,12 +7,10 @@
         display: flex;
         justify-content: space-between;
     }
-}
 
-@include scale(581px) {
-    .page-header {
-        &__content {
-            flex-direction: column;
+    @include scale(630px) {
+        &__logo {
+            margin-right: 25px;
         }   
     }
 }
