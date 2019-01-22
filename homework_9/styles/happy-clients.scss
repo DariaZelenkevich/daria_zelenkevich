@@ -5,156 +5,37 @@
     padding: get_vw_size(141) 0 get_vw_size(160);
 
     &__testimonials {
-        display: flex;
-        flex-wrap: wrap;
-        align-content: space-between;
         padding-top: 3.41vw;
-        font-size: 0;
     }
 
-    &__testimonial {
+    &__row {
         display: flex;
-        max-width: 48%;
-        margin-top: 20px;
-        padding: get_vw_size(43) get_vw_size(10) get_vw_size(50) get_vw_size(30);
-        vertical-align: top;
-        font-size: 13px;
-        background-color: $light-text-color;
+
+        & + & {
+           margin-top: $testimonial_margin-top;
+        }
     }
 
-    &__testimonial:nth-of-type(odd) {
-        margin-right: 20px;
-    }
-
-    &__testimonial:nth-of-type(even) {
-        margin-left: 20px;
-    }
-
-    &__testimonial:nth-of-type(1),
-    &__testimonial:nth-of-type(2) {
-        margin-top: 0;
-    }
-
-    &__avatar {
-        width: 25%;
-    }
-
-    &__avatar-image {
+    &__item {
+        display: flex;
+        align-items: flex-start;
         width: 100%;
-        max-width: 100%;
-        border-radius: 50%;
-    }
 
-    &__text-wrapper {
-        width: 75%;
-    }
-
-    &__quote-decoration-wraper {
-        display: inline-block;
-        width: 3%;
-        vertical-align: top;    
-    }
-
-    &__open-quote-decoration,
-    &__close-quote-decoration {
-        quotes: "\201F" "\201C"
-    }
-
-    &__open-quote-decoration::before {
-        content: open-quote;
-        font-family: "Brandon Grotesque";
-    }
-
-    &__close-quote-decoration::after {
-        content: close-quote;
-        display: block;
-        font-family: "Times New Roman";
-        text-align: end;
-    }
-
-    &__open-quote-decoration::before,
-    &__close-quote-decoration::after {
-        font-weight: 700;
-        font-size: 30px;
-    }
-
-    &__open-quote-decoration::before,
-    &__close-quote-decoration::after,
-    &__text {
-        color: $gray-text-color;
-    }
-
-    &__text {
-        padding-top: 3%;
-        padding-left: 2%;    
-    }
-
-    &__text,
-    &__author-wrapper {
-        display: inline-block;
-        width: 94%;    
-    }
-
-    &__author-wrapper {
-        padding-left: 6%;  
-    }
-
-    &__author-name,
-    &__author-post {
-        font-family: "Lato";
-        font-size: 12px;
-        line-height: 1;
-        text-transform: uppercase;    
-    }
-
-    &__author-name {
-        color: $bright-text-color;
-    }
-
-    &__author-post {
-        color: #99a9ae; 
-    }
-}
-
-@include scale(1031px) {
-
-    .happy-clients {
-        &__testimonial:nth-of-type(odd) {
-            margin-right: 10px;
+        & + & {
+            margin-left: $testimonial_margin-left;
         }
+    }
     
-        &__testimonial:nth-of-type(even) {
-            margin-left: 10px;
-        }
-    }
-}
-
-@include scale(581px) {
-
-    .happy-clients {
-        &__testimonials {
-            flex-direction: column;
-            align-items: center; 
+    @include scale(601px) {
+        &__row {
+            flex-wrap: wrap;
         }
 
-        &__testimonial {
-            max-width: 90%;
-        }
-
-        &__testimonial:nth-of-type(odd) {
-            margin-right: 0;
-        }
-    
-        &__testimonial:nth-of-type(even) {
-            margin-left: 0;
-        }
-
-        &__testimonial:not(:first-of-type) {
-            margin-top: 15px;
-        }
-
-        &__quote-decoration-wraper {
-           margin-right: 2px;
+        &__item {
+            & + & {
+                margin-left: 0;
+                margin-top:  $testimonial_margin-top;
+            }
         }
     }
 }

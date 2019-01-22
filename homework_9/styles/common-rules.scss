@@ -446,6 +446,92 @@
     } 
 }
 
+.testimonial {
+    display: flex;
+    padding: get_vw_size(43) get_vw_size(10) get_vw_size(50) get_vw_size(30);
+    font-size: 13px;
+    background-color: $light-text-color;
+
+    &__avatar {
+        width: 25%;
+    }
+
+    &__avatar-image {
+        width: 100%;
+        max-width: 100%;
+        border-radius: 50%;
+    }
+
+    &__text-wrapper {
+        width: 72%;
+    }
+
+    &__quote-decoration {
+        display: inline-block;
+        width: 3%;
+        vertical-align: top;    
+    }
+
+    &__open-quote-decoration,
+    &__close-quote-decoration {
+        quotes: "\201F" "\201C"
+    }
+
+    &__open-quote-decoration::before {
+        content: open-quote;
+        font-family: "Brandon Grotesque";
+    }
+
+    &__close-quote-decoration::after {
+        content: close-quote;
+        display: block;
+        font-family: "Times New Roman";
+        text-align: end;
+    }
+
+    &__open-quote-decoration::before,
+    &__close-quote-decoration::after {
+        font-weight: 700;
+        font-size: 30px;
+    }
+
+    &__open-quote-decoration::before,
+    &__close-quote-decoration::after,
+    &__text {
+        color: $gray-text-color;
+    }
+
+    &__text {
+        padding-top: 3%;
+        padding-left: 2%;    
+    }
+
+    &__text,
+    &__author-wrapper {
+        display: inline-block;
+        width: 94%;    
+    }
+
+    &__author-wrapper {
+        padding-left: 6%;  
+    }
+
+    &__author {
+        font-family: "Lato";
+        font-size: 12px;
+        line-height: 1;
+        text-transform: uppercase; 
+
+        &_name {
+            color: $bright-text-color;
+        }
+
+        &_post {
+            color: #99a9ae; 
+        }
+    }
+}
+
 
 @include scale(711px) {
     .page-button {
