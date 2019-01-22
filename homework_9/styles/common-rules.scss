@@ -24,6 +24,10 @@
     &__image {
         max-width: 100%;
     }
+
+    @include scale(630px) {
+        margin-right: 25px;  
+    }
 }
 
 .heading,
@@ -402,33 +406,6 @@
 }
 
 @include scale(581px) {
-
-    .client-form {
-
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items: stretch;
-        
-        &__wrapper,
-        &__button {
-            max-width: 100%; 
-            width: 100%;   
-            align-self: center;
-        }
-
-        &__wrapper{
-            margin-right: 0;
-        }
-
-        &__wrapper:not(:first-of-type) {
-            margin-top: 10px;
-        } 
-
-        &__item {
-            padding-left: 50px;
-        }
-    }
-
     .page-button {
         &__link {
             padding: 10px;

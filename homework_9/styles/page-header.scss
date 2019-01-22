@@ -6,11 +6,11 @@
     &__content {
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
 
-    @include scale(630px) {
-        &__logo {
-            margin-right: 25px;
-        }   
+    &__logo {
+        display: flex;
+        align-items: center;
     }
 }
