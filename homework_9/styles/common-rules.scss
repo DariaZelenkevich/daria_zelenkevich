@@ -211,8 +211,10 @@
                 margin-left: 0;
                 margin-top: 10px;
             }
-        }
+        } 
+    }
 
+    @include scale(779px) {
         &_newsletter {
 
             #{$form}__row:last-child{
@@ -223,11 +225,12 @@
                 flex-wrap: wrap;
             }
    
-            #{$form}__item {        
-                & + & {
-                    margin-left: 0;
-                    margin-top: 10px;
-                }
+            #{$form}__item:not(:first-child) {        
+                margin-top: 10px;
+            }
+
+            #{$form}__item {
+                margin-left: 0;
             }
         }
     }
