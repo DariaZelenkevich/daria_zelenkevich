@@ -136,7 +136,16 @@
         position: absolute;
         top: 0;
         bottom: 0;
-        width: vw(80);
+        width: get_vw_size(80);
+        cursor: pointer;
+
+        &_left {
+            left: 0;
+        }
+
+        &_right {
+            right: 0;
+        }
     }
 
     &__left-arrow,
@@ -145,28 +154,31 @@
         top: get_vw_size(139);
         display: none;
         color: $light-text-color;
-        font-size: get_vw_size(25);
+        font-size: $slider_arrows_size;
     }
 
     &__left-arrow {
-        left: get_vw_size(40);
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     &__right-arrow {
-        right: get_vw_size(40);
+        right: 50%;
+        transform: translateX(50%);
     }
     
     &__controls {
         position: absolute;
         top: get_vw_size(367);
         left: 50%;
-        transform: translateX(-50%);    
+        transform: translateX(-50%);
     }
 
     &__controler {
         display: inline-block;
-        font-size: get_vw_size(12);
+        font-size: $slider_controler_size;
         color: #dedfe0;
+        cursor: pointer;
     }
 
     &__controler:hover {
