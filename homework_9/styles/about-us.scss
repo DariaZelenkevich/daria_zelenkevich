@@ -33,6 +33,15 @@
         text-align: left;
         margin-bottom: 1.6vw;
     }
+
+    &__button {
+        display: inline-block;
+    }
+
+    &__link {
+        border: 1px solid #e7ad48;
+        background-color: #ffc155;
+    }
 }
 
 @include scale(1024px) {
