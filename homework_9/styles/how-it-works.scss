@@ -2,6 +2,7 @@
 
 .how-it-works {
     padding: get_vw_size(155) 0 get_vw_size(149);
+    text-align: center;
 
     &__list {
         position: relative;
@@ -28,7 +29,7 @@
     }
 
     &__button {
-        text-align: center;
+        display: inline-block;
     }
 
     &__image-arrow1,
