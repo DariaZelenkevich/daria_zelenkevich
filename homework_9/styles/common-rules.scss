@@ -494,6 +494,10 @@
         border-top: 1px solid #e2e9f0;
         color: #b5bbc1;  
     }
+
+    &__button {
+        display: inline-block;
+    }
 }
 
 .step {
