@@ -305,8 +305,6 @@
     }
 }
 
-
-
 .button {
     display: inline-block;
     padding: 18px 20px; 
@@ -473,12 +471,12 @@
     }
 
     &__price {
-        font-size: 3.5vw;
+        font-size: 60px;
         font-weight: bold;  
     }
 
     &__currency {
-        font-size: 1.8vw;
+        font-size: 30px;
         font-weight: normal;
         vertical-align: top;   
     }
