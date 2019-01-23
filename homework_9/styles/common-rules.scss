@@ -305,54 +305,28 @@
     }
 }
 
-.page-button {
-    padding: 0;
+
+
+.button {
     display: inline-block;
-    border: none;
+    padding: 18px 20px; 
+    font-size: 10px;
+    line-height: 1;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    text-transform: uppercase;
+    color: #fff;
     border-radius: 3px;
+    border: 1px solid transparent;
     background-color: $light-warm-background-color;
 
-    &__link {
-        display: inline-block;
-        padding: get_vw_size(16); 
-        font-size: 10px;
-        line-height: 1;
-        text-align: center;
-        text-decoration: none;
-        text-transform: uppercase;
-        color: #fff;
-
-        &_newsletter,
-        &_boost-up {
-            padding: 10px;
-        }
-
-        &_about-us {
-            padding: 1vw;
-        }
-    }
-
-    &__link:hover {
+    &:hover {
         text-decoration: underline;
-    }
-
-
-
-    &_about-us {
-        width: 29%;
-        border: 1px solid #e7ad48;
-        background-color: $warm-background-color;   
-    }
-
-    &_choos-price {
-        width: 50%;
-    } 
-
-    &_how-it-works {
-        display: block;
-        width: 14%;
-        margin: 0 auto;
-        text-align: center;    
+        color: $light-warm-background-color;
+        background-color: $light-text-color;
+        border: 1px solid $light-warm-background-color;
+    
     }
 }
 
@@ -627,39 +601,6 @@
 
         &_post {
             color: #99a9ae; 
-        }
-    }
-}
-
-
-@include scale(711px) {
-    .page-button {
-        &__link {
-            &_boost-up {
-                font-size: 7px;
-            }
-        }
-    }
-
-}
-
-@include scale(581px) {
-    .page-button {
-        &__link {
-            padding: 10px;
-            
-            &_boost-up {
-                font-size: 10px;
-            }
-        }
-
-        &_newsletter,
-        &_boost-up {
-            margin-top: 10px;
-        }
-
-        &_how-it-works {
-            width: 50%;
         }
     }
 }
