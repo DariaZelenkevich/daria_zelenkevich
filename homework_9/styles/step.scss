@@ -1,0 +1,22 @@
+.step {
+    text-align: center;
+
+    &__icon {
+        font-size: $step_icon_size;
+        text-shadow: -2px 0 $cold-background-color, 0 2px $cold-background-color, 2px 0 $cold-background-color, 0 -2px $cold-background-color;   
+    }
+
+    &__heading {
+        padding: get_vw_size(102) 0 get_vw_size(28);
+        font-family: "Lato";
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 1;
+        color: $dark-text-color;
+        text-transform: uppercase;   
+    }
+
+    &__text {
+        color: $gray-text-color;
+    }
+}

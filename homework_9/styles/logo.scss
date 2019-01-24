@@ -1,0 +1,12 @@
+.logo{
+    width: 50px;
+    height: 48px;
+
+    &__image {
+        max-width: 100%;
+    }
+
+    @include scale(630px) {
+        margin-right: 25px;  
+    }
+}

@@ -1,0 +1,79 @@
+.card {
+    $card: &;
+
+    position: relative;
+    z-index: 1;
+    padding: get_vw_size(57) 31px get_vw_size(48);
+    border: 1px solid #ccd5df;
+    border-radius: 3px;
+    font-family: "Lato";
+    font-size: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: $light-text-color;
+
+    &_best-offer {
+        z-index: 2;
+        padding: get_vw_size(87) 31px get_vw_size(78);
+        background-color: $cold-background-color;
+        border: transparent;
+        margin: 0 -1px;
+
+        #{$card}__heading,
+        #{$card}__price,
+        #{$card}__currency,
+        #{$card}__period {
+            color: $light-text-color;
+        }
+
+        #{$card}__item {
+            color: $smooth-light-text-color;
+            border-top: 1px solid #8eb8e2;
+        }
+    }
+
+    &__heading,
+    &__period {
+        color: #818b95;
+    }
+    
+    &__heading{
+        padding-bottom: 1.76vw;
+        font-size: 25px;
+        line-height: 1;
+        font-weight: 300;
+    }
+
+    &__price,
+    &__currency {
+        display: inline-block;
+        color: $light-warm-background-color;    
+    }
+
+    &__price {
+        font-size: 60px;
+        font-weight: bold;  
+    }
+
+    &__currency {
+        font-size: 30px;
+        font-weight: normal;
+        vertical-align: top;   
+    }
+
+    &__description-list {
+        padding: 1.94vw 0 1.11vw;
+        margin: 0;
+        list-style: none;
+    }
+
+    &__item {
+        padding: 0.9vw 0;
+        border-top: 1px solid #e2e9f0;
+        color: #b5bbc1;  
+    }
+
+    &__button {
+        display: inline-block;
+    }
+}

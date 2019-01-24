@@ -1,0 +1,38 @@
+
+.nav-menu {
+    $nav-menu: &;
+
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    &__item {
+        display: inline-block;
+    }
+
+    &__link {
+        display: inline-block;
+        padding: get_vw_size(12) get_vw_size(21);
+        font-family: "Lato";
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 1;
+        text-decoration: none; 
+        text-transform: uppercase;
+        color: $dark-text-color;        
+    }
+
+    &_top {
+        align-self: center;
+
+        #{$nav-menu}__link {
+            color: $mid-gray-text-color;
+        }
+
+        #{$nav-menu}__link:hover {
+            border-radius: 3px;
+            color: $light-text-color;
+            background-color: $light-warm-background-color;
+        }
+    }
+}

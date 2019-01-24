@@ -1,0 +1,89 @@
+.slider {
+    $self: &;
+
+    &__block,
+    &__controls {
+        display: inline-block;
+    }
+
+    &__block {
+        position: relative;
+    }
+
+    &__background {
+        position: relative;
+        max-width: get_vw_size(647);
+        min-width: get_vw_size(647);
+        min-height: get_vw_size(343);
+        background: url("../img/laptop.png") no-repeat;
+        background-size: cover;
+
+        &:hover {
+            #{$self}__left-arrow,
+            #{$self}__right-arrow {
+                display: block;
+            }
+        }
+    }
+
+    &__image {
+        position: absolute;
+        top: get_vw_size(18);
+        left: get_vw_size(102);
+        height: get_vw_size(264);
+        width: get_vw_size(445);
+    }
+
+    &__link {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        width: get_vw_size(80);
+        cursor: pointer;
+
+        &_left {
+            left: 0;
+        }
+
+        &_right {
+            right: 0;
+        }
+    }
+
+    &__left-arrow,
+    &__right-arrow {
+        position: absolute;
+        top: get_vw_size(139);
+        display: none;
+        color: $light-text-color;
+        font-size: $slider_arrows_size;
+    }
+
+    &__left-arrow {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &__right-arrow {
+        right: 50%;
+        transform: translateX(50%);
+    }
+    
+    &__controls {
+        position: absolute;
+        top: get_vw_size(367);
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &__controler {
+        display: inline-block;
+        font-size: $slider_controler_size;
+        color: #dedfe0;
+        cursor: pointer;
+    }
+
+    &__controler:hover {
+        color: #1ca8dd;
+    }
+}
