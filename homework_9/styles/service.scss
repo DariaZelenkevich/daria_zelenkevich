@@ -5,7 +5,7 @@
 
     &:hover {
         #{$service}__icon {
-            text-shadow: -2px 0 #f6772c, 0 2px #f6772c, 2px 0 #f6772c, 0 -2px #f6772c;
+            text-shadow: -2px 0 $icon-hover, 0 2px $icon-hover, 2px 0 $icon-hover, 0 -2px $icon-hover;
         }
     }
 
@@ -14,7 +14,7 @@
         top: 0;
         left: 0;
         font-size: $service_icon_size;
-        text-shadow: -2px 0 $cold-background-color, 0 2px $cold-background-color, 2px 0 $cold-background-color, 0 -2px $cold-background-color;    
+        text-shadow: -2px 0 $icon-color, 0 2px $icon-color, 2px 0 $icon-color, 0 -2px $icon-color;    
     }
 
     &__item {
@@ -28,9 +28,11 @@
         font-weight: 700;
         line-height: 1;
         text-transform: uppercase;
+        color: $dark-text-color;
     }
     
     &__text {
         line-height: 1.5;
+        color: $gray-text-color;
     } 
 }

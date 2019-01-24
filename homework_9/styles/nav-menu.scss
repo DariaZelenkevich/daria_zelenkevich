@@ -26,13 +26,13 @@
         align-self: center;
 
         #{$nav-menu}__link {
-            color: $mid-gray-text-color;
+            color:  $smooth-dark-color;
         }
 
         #{$nav-menu}__link:hover {
             border-radius: 3px;
             color: $light-text-color;
-            background-color: $light-warm-background-color;
+            background-color: $warm-background-color;
         }
     }
 }

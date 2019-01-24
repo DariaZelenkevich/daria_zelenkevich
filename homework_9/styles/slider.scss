@@ -55,7 +55,7 @@
         position: absolute;
         top: get_vw_size(139);
         display: none;
-        color: $light-text-color;
+        color: $light-color;
         font-size: $slider_arrows_size;
     }
 
@@ -79,11 +79,11 @@
     &__controler {
         display: inline-block;
         font-size: $slider_controler_size;
-        color: #dedfe0;
+        color: $lighter-gray-color;
         cursor: pointer;
     }
 
     &__controler:hover {
-        color: #1ca8dd;
+        color: $bright-blue-color;
     }
 }

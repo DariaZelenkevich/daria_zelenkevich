@@ -2,7 +2,7 @@
     display: flex;
     padding: get_vw_size(43) get_vw_size(10) get_vw_size(50) get_vw_size(30);
     font-size: 13px;
-    background-color: $light-text-color;
+    background-color: $light-color;
 
     &__avatar {
         width: 25%;
@@ -75,11 +75,11 @@
         text-transform: uppercase; 
 
         &_name {
-            color: $bright-text-color;
+            color: $darker-orange-color;
         }
 
         &_post {
-            color: #99a9ae; 
+            color:  $light-gray-color3; 
         }
     }
 }

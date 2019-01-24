@@ -1,7 +1,7 @@
 @import "./variables.scss";
 
 .about-us {
-    background-color: #ffc155;
+    background-color: $light-warm-background-color;
     display: flex;
     align-items: stretch;
 
@@ -23,7 +23,7 @@
 
     &__text {
         font-weight: 400;
-        color: #fff;
+        color: $light-text-color;
         padding-bottom: 1.94vw;
         font-size: 11px;
         line-height: 1.9;
@@ -39,8 +39,8 @@
     }
 
     &__link {
-        border: 1px solid #e7ad48;
-        background-color: #ffc155;
+        border: 1px solid $mid-orange-color;
+        background-color: $light-warm-background-color;
     }
 }
 

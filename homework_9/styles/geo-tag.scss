@@ -9,7 +9,7 @@
         z-index: 2;
         width: get_vw_size(142);
         padding: 0 2px;
-        color: #aeb7ba;
+        color: $light-gray-color;
         text-align: center;
         font-size: get_vw_size(13);
         line-height: 1.5;
@@ -25,7 +25,7 @@
     }
 
     &__e-mail-link {
-        color: $light-warm-background-color;
+        color: $main-orange-color;
         text-decoration: none;
     }
 

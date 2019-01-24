@@ -3,7 +3,7 @@
 
     &__icon {
         font-size: $step_icon_size;
-        text-shadow: -2px 0 $cold-background-color, 0 2px $cold-background-color, 2px 0 $cold-background-color, 0 -2px $cold-background-color;   
+        text-shadow: -2px 0 $icon-color, 0 2px $icon-color, 2px 0 $icon-color, 0 -2px $icon-color;   
     }
 
     &__heading {

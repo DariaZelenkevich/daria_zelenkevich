@@ -5,14 +5,14 @@
         height: $input_padding*2 + $input_font_size*$input_line_height;
         width: 100%;
         padding: $input_padding $input_padding $input_padding $input_icon_size;
-        border: 1px solid #cbcbcb;
+        border: 1px solid $smooth-gray-color;
         border-radius: 3px;
-        color: $light-gray-text-color;
+        color: $mid-gray-color;
         font-size: $input_font_size;
         line-height: $input_line_height;
 
         &::placeholder {
-            color: $light-gray-text-color;
+            color: $mid-gray-color;
         }
 
         &_submit {
@@ -21,15 +21,15 @@
             border-radius: 3px;
             text-align: center;
             text-transform: uppercase;
-            color: #fff;
-            background-color: $light-warm-background-color;  
+            color: $light-text-color;
+            background-color: $warm-background-color;  
         }
         
         &_submit:hover {
             text-decoration: underline;
-            color: $light-warm-background-color;
+            color: $warm-background-color;
             background-color: $light-text-color;
-            border: 1px solid $light-warm-background-color;
+            border: 1px solid $warm-background-color;
         }
 
     }
@@ -38,6 +38,6 @@
         position: absolute;
         bottom: $input_padding;
         left: $input_icon_size/2;
-        color: #6e6e6e;
+        color:  $mid-dark-color;
     }
 }

@@ -4,7 +4,7 @@
     position: relative;
     z-index: 1;
     padding: get_vw_size(57) 31px get_vw_size(48);
-    border: 1px solid #ccd5df;
+    border: 1px solid $smooth-gray-color2;
     border-radius: 3px;
     font-family: "Lato";
     font-size: 10px;
@@ -27,14 +27,14 @@
         }
 
         #{$card}__item {
-            color: $smooth-light-text-color;
-            border-top: 1px solid #8eb8e2;
+            color: $mid-blue-color;
+            border-top: 1px solid $cold-blue-color;
         }
     }
 
     &__heading,
     &__period {
-        color: #818b95;
+        color: $smooth-dark-color2;
     }
     
     &__heading{
@@ -47,7 +47,7 @@
     &__price,
     &__currency {
         display: inline-block;
-        color: $light-warm-background-color;    
+        color: $main-orange-color;    
     }
 
     &__price {
@@ -69,8 +69,8 @@
 
     &__item {
         padding: 0.9vw 0;
-        border-top: 1px solid #e2e9f0;
-        color: #b5bbc1;  
+        border-top: 1px solid $lighter-gray-color2;
+        color:  $light-gray-color2;  
     }
 
     &__button {

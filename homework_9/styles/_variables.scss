@@ -1,26 +1,47 @@
- //  text-color
+//colors
 
-$dark-text-color: #394b50;
+$main-blue-color: #709dca;
+$mid-blue-color: #c2e1ff;
+$cold-blue-color: #8eb8e2;
+$light-blue-color: #e7edf3;
+$bright-blue-color: #1ca8dd;
+$main-dark-color: #394b50;
+$mid-dark-color: #6e6e6e;
+$smooth-dark-color: #868686; 
+$smooth-dark-color2: #818b95;
+$main-gray-color: #7b7b7b;
+$mid-gray-color: #a9a9a9;
+$light-gray-color: #aeb7ba;
+$light-gray-color2: #b5bbc1;
+$light-gray-color3: #99a9ae;
+$lighter-gray-color: #dedfe0;
+$lighter-gray-color2: #e2e9f0;
+$smooth-gray-color: #cbcbcb;
+$smooth-gray-color2: #ccd5df;
+$main-orange-color: #ffbb42;
+$mid-orange-color: #e7ad48;
+$light-orange-color: #ffc155;
+$darker-orange-color:#f6772c;
+$light-color: #fff;
+ 
+//  text-color
 
-$gray-text-color: #7b7b7b;
-$mid-gray-text-color:  #868686;
-$light-gray-text-color: #a9a9a9;
-
-$light-text-color: #fff;
-$smooth-light-text-color: #c2e1ff;
-
-$bright-text-color:  #f6772c;
-
+$light-text-color:  $light-color;
+$dark-text-color: $main-dark-color;
+$gray-text-color: $main-gray-color;
 
 // background-color
 
-$cold-background-color: #709dca;
+$cold-background-color: $main-blue-color;
+$light-cold-background-color: $light-blue-color;
+$warm-background-color:  $main-orange-color;
+$light-warm-background-color:  $light-orange-color;
 
-$light-cold-background-color: #e7edf3;
+//icon-color
+$icon-color: $main-blue-color;
+$icon-hover: $darker-orange-color;
+$icon-hover-light: $light-orange-color;
 
-$warm-background-color: #ffc155;
-
-$light-warm-background-color: #ffbb42;
 
 // sizes
 
