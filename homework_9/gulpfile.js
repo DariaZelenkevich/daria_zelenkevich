@@ -21,12 +21,16 @@ const scss_path_to_watch = 'styles/*.scss'; // наблюдать за изме�
 const destination_path = 'dist/'; // папка куда положить итоговый css
 const final_css_name = 'style.css'; // имя итоговогой файла
 
+const path_to_pug_pages = 'templates/pages/*.pug';
+const pug_path_to_watch = './templates/**/*.pug';
+
 
 const gulp         = require('gulp');
 const sass         = require('gulp-sass');
 const sourcemaps   = require('gulp-sourcemaps');
 const autoprefixer = require('gulp-autoprefixer');
 const concat       = require('gulp-concat');
+const pug 		   = require('gulp-pug');
 const browserSync  = require('browser-sync').create();
 const browser_list = ['last 2 versions', 'ie >= 10'];
 
@@ -37,6 +41,7 @@ function sync() {
 		}
 	});
 
+	gulp.watch(pug_path_to_watch, build_templates);
 	gulp.watch(scss_path_to_watch, {ignoreInitial: false}, build_sass);
 	gulp.watch("./*.html").on('change', browserSync.reload);
 }
@@ -52,4 +57,15 @@ function build_sass() {
     .pipe(browserSync.stream()); // reload browser
 }
 
-exports.default = sync;
+function build_templates() {
+    return gulp.src(path_to_pug_pages)
+        .pipe(pug({
+            pretty: true
+        }))
+        .pipe(gulp.dest('./'))
+}
+
+exports.default = gulp.series(
+    gulp.parallel(build_templates, build_sass),
+    sync
+);
