@@ -36,6 +36,7 @@
     &__image-arrow2,
     &__image-arrow3 {
         position: absolute;
+        max-width: 150px;
         width: get_vw_size(150);
     }
 
