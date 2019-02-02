@@ -4,7 +4,7 @@
     font-family: $primiry-heading;
     font-size: 28px;
     font-weight: 700;
-    color: 000;
+    color: $main-dark-color;
     line-height: 1;
     text-transform: uppercase;
     letter-spacing: 2.28px;
@@ -12,17 +12,17 @@
 
 .secondary-heading {
     font-family: $secondary-heading;
-    color: 000;
+    color: $main-dark-color;
     font-size: 14px;
     line-height: 1;
     text-transform: uppercase;
     letter-spacing: 1.08px;
 
     &_l {
-        font-size: 20px;
+        font-size: 17px;
     }
 
-    &_m {
-        font-size: 17px;
+    &_l-bold {
+        font-family: $secondary-heading-bold;
     }
 }

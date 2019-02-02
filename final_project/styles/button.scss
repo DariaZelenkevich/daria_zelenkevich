@@ -1,0 +1,12 @@
+@import './variables.scss';
+
+.button {
+    display: inline-block;
+    padding: vw_size(18);
+    border: 2px solid transparent;
+    border-radius: 2px;
+    font-family: $primiry-heading;
+    font-size: 13px;
+    color: $main-dark-color;
+    text-decoration: none;
+}

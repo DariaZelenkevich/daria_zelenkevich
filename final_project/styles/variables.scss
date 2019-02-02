@@ -1,4 +1,59 @@
+
+
+
+
 //fonts
+
 $main-font: 'Raleway';
 $primiry-heading: 'Montserrat';
 $secondary-heading: 'Merriweather';
+$secondary-heading-bold: 'Merriweather Bold';
+
+
+//colors
+
+$main-light-color: #fff;
+$light-color: #eff0f2;
+$light-color-lighter1: #f8fafa;
+$light-color-lighter2: #f9fbfb;
+
+$main-dark-color: #000;
+$dark-color: #021623;
+$dark-color-mid: #262b2e;
+
+$main-bright-color: #71f6eb;
+$bright-color: #6df6eb;
+$bright-color-mid: #6eeee4;
+$bright-color-lighter: #76f4ea;
+
+
+$main-gray-color: #eff0f2;
+$gray-color: #8d8d8d;
+$gray-color-lighter1: #eaebed;
+$gray-color-lighter2: #ecedef;
+
+
+//mixins & functions
+
+@function vw_size($size) {
+    $screen: 1552;
+    @return($size / $screen) * 100vw;
+}
+
+@mixin scale($width, $diff: 'less') {
+    $behaviour: max-width;
+    $screen-width: $width;
+
+    @if ($diff == 'less') {
+        $screen-width: $width - 1;
+    }
+
+    @if ($diff == 'self-above') {
+        $behaviour: min-width;
+    }
+
+    @media screen and (#{$behaviour}: $screen-width) {
+        @content;
+       
+    }   
+}
