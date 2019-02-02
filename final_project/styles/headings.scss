@@ -1,0 +1,28 @@
+@import './variables.scss';
+
+.primiry-heading {
+    font-family: $primiry-heading;
+    font-size: 28px;
+    font-weight: 700;
+    color: 000;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 2.28px;
+}
+
+.secondary-heading {
+    font-family: $secondary-heading;
+    color: 000;
+    font-size: 14px;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 1.08px;
+
+    &_l {
+        font-size: 20px;
+    }
+
+    &_m {
+        font-size: 17px;
+    }
+}

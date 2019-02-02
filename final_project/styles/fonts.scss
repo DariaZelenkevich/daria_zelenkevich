@@ -1,0 +1,18 @@
+@import './variables.scss';
+
+@font-face {
+    font-family: $main-font;
+    src: url('./../fonts/Raleway-Regular.ttf');
+    font-weight: 400;
+    color: aqua;
+}
+
+@font-face {
+    font-family: $primiry-heading;
+    src: url('./../fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+    font-family: $secondary-heading;
+    src: url('./../fonts/Merriweather-Regular.ttf');
+}
