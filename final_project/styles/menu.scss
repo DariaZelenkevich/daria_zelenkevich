@@ -1,0 +1,17 @@
+@import './variables.scss';
+
+.menu {
+    list-style: none;
+    padding: 0;
+    color: $main-dark-color;
+    overflow: hidden;
+
+    
+    &__item {  
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        color: $main-dark-color;
+    }
+}
+
