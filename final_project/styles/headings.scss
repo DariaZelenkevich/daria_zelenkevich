@@ -13,16 +13,16 @@
 .secondary-heading {
     font-family: $secondary-heading;
     color: $main-dark-color;
-    font-size: 14px;
+    font-size: 17px;
     line-height: 1;
     text-transform: uppercase;
     letter-spacing: 1.08px;
 
-    &_l {
-        font-size: 17px;
+    &_s {
+        font-size: 14px;
     }
 
-    &_l-bold {
+    &_bold {
         font-family: $secondary-heading-bold;
     }
 }
