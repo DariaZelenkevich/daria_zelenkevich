@@ -1,11 +1,10 @@
 @import './variables.scss';
 
 .primiry-heading {
-    font-family: $primiry-heading;
-    font-size: 28px;
+    padding-bottom: 17px;
+    font: 28px/1 $primiry-heading;
     font-weight: 700;
     color: $main-dark-color;
-    line-height: 1;
     text-transform: uppercase;
     letter-spacing: 2.28px;
 }
