@@ -13,6 +13,11 @@
 }
 
 @font-face {
+    font-family: $primiry-heading-light;
+    src: url('./../fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
     font-family: $secondary-heading;
     src: url('./../fonts/Merriweather-Regular.ttf');
 }
