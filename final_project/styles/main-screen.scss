@@ -1,0 +1,51 @@
+@import './variables.scss';
+
+.main-screen {
+    background-color: $light-color;
+
+    &__content {
+        position: relative;
+        padding: vw_size(206) 0 vw_size(196);
+        text-align: center;
+    }
+
+    &__greetings {
+        text-align: center;
+        padding-bottom: vw_size(150);
+    }
+
+    &__greeting {
+        display: block;
+        // z-index: 3000;
+        font: 33px/1 $primiry-heading;
+        color: $dark-color-lighter;
+        text-transform: uppercase;
+        text-shadow: 4px 8px 10px rgba(0, 0, 0, 0.24);
+        letter-spacing: 2.7px;
+
+        & + & {
+            padding-top: vw_size(25);
+        }
+
+        &-highlight {
+            background: $bright-color-lighter;
+        }
+    }
+
+    &__button{
+        border: 1.5px solid rgba(0, 0, 0, 0.5);
+        font-weight: 700;
+        padding-left: vw_size(48);
+        padding-right: vw_size(48);
+    }
+
+    &__image{
+        position: absolute;
+        right: vw_size(270);
+        bottom: vw_size(137);
+        min-height: vw_size(90);
+        width: vw_size(75);
+        background: url('./../img/main_screen_image.png') no-repeat;
+        background-size: cover;
+    }
+}
