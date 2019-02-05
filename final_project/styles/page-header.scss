@@ -1,0 +1,12 @@
+@import './variables.scss';
+
+.page-header {
+    background-color: $light-color;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: vw_size(65);
+    }
+}
