@@ -2,11 +2,12 @@
 
 .button {
     display: inline-block;
-    padding: vw_size(18);
-    border: 2px solid transparent;
+    padding: vw_size(20);
+    border: 1px solid transparent;
     border-radius: 2px;
-    font-family: $primiry-heading;
+    font-family: $primiry-heading-light;
     font-size: 13px;
     color: $main-dark-color;
     text-decoration: none;
+    letter-spacing: 2.16px;
 }
