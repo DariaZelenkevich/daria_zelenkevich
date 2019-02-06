@@ -1,10 +1,8 @@
 @import './variables.scss';
 
 .about {
-
-    &__content {
-        padding: vw_size(129) 0 vw_size(110);
-    }
+    padding: vw_size(129) 0 vw_size(110);
+    background-color: $light-color-lighter1;
 
     &__heading {
         text-align: center;
@@ -13,6 +11,25 @@
 
     &__info {
         display: flex;
+        justify-content: space-between;
+        padding: 0 35px;
+    }
+
+    &__slider,
+    &__articles {
+        width: calc(50% - 3.51vw);
+
+    }
+
+    &__articles {
+        padding: 5px 33px;
+        text-align: justify;
+    }
+
+    &__article {
+        & + & {
+            margin-top: vw_size(38);
+        }
     }
 
 }

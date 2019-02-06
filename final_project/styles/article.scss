@@ -1,0 +1,18 @@
+@import './variables.scss';
+
+.article {
+     
+    &__heading {
+        margin-bottom: 27px;
+
+        &_prime {
+            margin-bottom: 31px;
+        }
+    }
+
+    &__paragraph {
+        & + & {
+            margin-top: vw_size(45);
+        }
+    }
+}

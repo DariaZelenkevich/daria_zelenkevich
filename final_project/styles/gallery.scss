@@ -1,0 +1,15 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-between;
+
+    &__item {
+        width: 33%;
+    }
+
+    &__image {
+        width: 100%;
+        max-width: 100%;
+    }
+}
