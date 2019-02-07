@@ -24,4 +24,8 @@
     &_bold {
         font-family: $secondary-heading-bold;
     }
+
+    &_theme_light {
+        color: $main-light-color;
+    }
 }
