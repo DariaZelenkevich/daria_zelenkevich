@@ -1,0 +1,58 @@
+@import './variables.scss';
+
+.slider {
+    $slider: &;
+
+    display: flex;
+    justify-content: space-between;
+
+    &__image {
+        max-width: 40%
+    }
+
+    &__text-block {
+        max-width: 58%;
+        padding-top: 3%;
+    }
+
+    &__comment {
+        padding: vw_size(100) vw_size(85) vw_size(70); 
+        background: $gray-color-lighter1;
+        text-align: center;
+        line-height: 1.2;
+    }
+
+    &__controlers {
+        padding-top: 30px;
+        align-self: flex-end;
+        text-align: end;
+
+    }
+
+    &__controler {
+        display: inline-block;
+        padding: vw_size(20);
+        background: $main-light-color;
+        box-shadow: 3px 7px 11px rgba(20, 20, 21, 0.05);
+        border-radius: 3px;
+
+        & + & {
+            margin-left: vw_size(30);
+        }
+
+        &:hover {
+            background: $main-bright-color;
+
+            #{$slider}__icon {
+                opacity: 1;
+            }
+        }
+    }
+
+    &__icon {
+        height: $icon-height;
+        width: $icon-width;
+        opacity: 0.3;
+        transform: translateY(10%);
+    }
+}
