@@ -1,0 +1,28 @@
+@import'./variables.scss';
+
+.contacts {
+    background: url('./../img/contact_background.jpg') no-repeat;
+    background-size: cover;
+    padding: vw_size(122) 0;
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__form,
+    &__info {
+        background-color: $dark-color;
+        opacity: 0.71;
+        box-shadow: 0 0 30px rgba(21, 21, 21, 0.12);
+    }
+
+    &__form {
+        width: 60%;
+    }
+
+    &__info {
+        width: 40%;
+    }
+
+}

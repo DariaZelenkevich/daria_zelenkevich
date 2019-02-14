@@ -17,7 +17,8 @@ $light-color-lighter2: #f9fbfb;
 $main-dark-color: #000;
 $dark-color: #021623;
 $dark-color-mid: #262b2e;
-$dark-color-lighter: #505050;
+$dark-color-lighter1: #505050;
+$dark-color-lighter2: #767070;
 
 
 $main-bright-color: #71f6eb;
@@ -32,6 +33,12 @@ $gray-color: #8d8d8d;
 $gray-color-mid: #d0d0d0;
 $gray-color-lighter1: #eaebed;
 $gray-color-lighter2: #ecedef;
+
+//sizes
+$item-link: 15px;
+$item-close-button: 17px;
+$icon-height: 15px;
+$icon-width: 15px;
 
 
 //mixins & functions
