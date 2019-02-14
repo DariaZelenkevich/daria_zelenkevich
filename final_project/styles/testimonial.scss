@@ -1,0 +1,48 @@
+@import './variables.scss';
+
+.testimonial {
+    $testimonial: &;
+
+    &__heading {
+        padding-bottom: vw_size(23);       
+    }
+
+    &__author-post {
+        font: 14px/1 $secondary-heading;
+        font-weight: 400;
+        font-style: italic;
+        color: $dark-color-lighter2;
+        letter-spacing: 0.45px;
+    }
+
+    &__socials {
+       padding-top: vw_size(38); 
+    }
+
+    &__link {
+        text-decoration: none;
+
+        & + & {
+            margin-left: 12px;
+        }
+
+        &:hover {
+            #{$testimonial}__icon {
+                fill: $dark-color-lighter2;
+            }
+        }
+    }
+
+    
+    &__rating {
+        padding-top: vw_size(33);
+    }
+
+    &__icon {
+        width: $icon-width;
+        height: $icon-height;
+        opacity: 0.7;
+
+
+    }
+}
