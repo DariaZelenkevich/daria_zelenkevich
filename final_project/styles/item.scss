@@ -8,16 +8,16 @@
     max-width: 56%;
     margin-bottom: 15px;
 
-    &:hover,
-    &:focus {
-        #{$item}__preview{
-            display:  none;
-        }
+    // &:hover,
+    // &:focus {
+    //     #{$item}__preview{
+    //         display:  none;
+    //     }
         
-        #{$item}__info {
-            display: block;
-        }
-    }
+    //     #{$item}__info {
+    //         display: block;
+    //     }
+    // }
 
     &__image {
         max-width: 100%;
@@ -38,7 +38,10 @@
 
     &__preview {
         justify-content: flex-end;
-        padding: vw_size(55) 25% vw_size(55) vw_size(65);
+        padding-top: vw_size(55);
+        padding-right: 25%;
+        padding-left: vw_size(65);
+        padding-bottom: (55px + $item-link);
         color: rgba($color: $main-light-color, $alpha: 0.9);
         background: rgba($color: $main-dark-color, $alpha: 0.65);
     }
@@ -46,11 +49,47 @@
     &__info {
         display: none;
         justify-content: space-between;
-        padding: vw_size(65) 25% vw_size(55) vw_size(65);
+        padding-top: vw_size(65);
+        padding-right: 25%;
+        padding-left:vw_size(65);
+        padding-bottom: (53px + $item-close-button);
         color: $main-dark-color;
         background: $bright-color;
-
     }
 
+    &__content {
+        overflow: auto;
+        max-height: 100%;
+        padding-bottom: vw_size(55);
+    }
 
+    &__nav {
+        position: absolute;
+        bottom:55px;
+        transform: translateY(50%);
+        left: vw_size(65);
+    }
+
+    &__link {
+        position: relative;
+        font-size: 14px;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: 500;
+        color: $light-color-lighter2;
+
+        &::after {
+            content: '\2192';
+            position: absolute;
+            left: 120%;
+            font-size: 25px;
+            opacity: 0.7;
+
+        }
+
+        &:hover {
+            color: $bright-color-lighter;
+        }
+    }
+    
 }
