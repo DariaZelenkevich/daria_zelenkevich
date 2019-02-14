@@ -1,15 +1,47 @@
 .gallery {
+    $gallery: &;
+
     display: flex;
     flex-wrap: wrap;
     align-content: space-between;
     justify-content: space-between;
 
     &__item {
+        position: relative;
         width: 33%;
+
+        &:hover,
+        &:focus {
+            #{$gallery}__comment {
+               display:  block;
+            }
+        }
     }
 
     &__image {
         width: 100%;
         max-width: 100%;
+    }
+
+    &__comment {
+        display: none;
+        position: absolute;
+        bottom: vw_size(15);
+        right: vw_size(18);
+        left: vw_size(18);
+        background-color: $bright-color;
+        padding: vw_size(43) 15% vw_size(42) vw_size(38);
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            transform: translateY(-100%);
+            width: 0;
+            height: 0;
+            border-width: 0 10px 20px 10px;
+            border-color: transparent transparent #6DF6EB transparent;
+            border-style: solid;
+        }
     }
 }
