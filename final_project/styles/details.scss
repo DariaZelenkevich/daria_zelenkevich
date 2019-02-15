@@ -1,0 +1,20 @@
+@import'./variables.scss';
+
+.details {
+    padding: 0 vw_size(10);
+    color: rgba($color: $main-light-color, $alpha: .7);
+    font-size: 15px;
+    font-weight: 400;
+
+    &__item {
+        display: block;
+
+        & + & {
+            margin-top: 12px;
+        }
+    }
+
+    &__at-place {
+        margin-bottom: vw_size(35);
+    }
+}
