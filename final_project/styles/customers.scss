@@ -1,0 +1,20 @@
+@import'./variables.scss';
+.customers {
+    padding: vw_size(110) 0;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        & + & {
+            padding-top: vw_size(45);
+        }
+
+        &_major {
+            padding-left: vw_size(300);
+            padding-right: vw_size(300);
+        }
+    }
+
+}
