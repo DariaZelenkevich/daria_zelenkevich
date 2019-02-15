@@ -2,7 +2,7 @@
 
 .contacts {
     background: url('./../img/contact_background.jpg') no-repeat;
-    background-size: cover;
+    background-size: contain;
     padding: vw_size(122) 0;
 
     &__content {
@@ -18,11 +18,27 @@
     }
 
     &__form {
-        width: 60%;
+        width: calc(60% - 30px);
+        padding: vw_size(45) vw_size(33) vw_size(40);
     }
 
     &__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         width: 40%;
+        padding: vw_size(35) vw_size(20) vw_size(20);
+
     }
+
+    &__details {
+        margin-bottom: vw_size(25);
+    }
+
+    &__map {
+        height: vw_size(224);
+        width: 100%;
+    }
+
 
 }
