@@ -1,0 +1,49 @@
+@import'./variables.scss';
+
+.page-footer {
+    $page-footer: &;
+
+    background-color: $dark-color-mid;
+    padding: vw_size(93) 0;
+
+    &__content {
+        text-align: center;
+        color: $main-light-color;
+    }
+
+    &__heading {
+        padding-bottom: vw_size(20);
+        font-size: 12px;
+        line-height: 1;
+        opacity: .8;
+        text-transform: uppercase;
+        letter-spacing: 0.16px;
+    }
+
+    &__link {
+        display: inline-block;
+        padding: 6px 10px;
+        background: rgba($color: $dark-color-smooth, $alpha: .4);
+        text-decoration: none;
+
+        &:hover {
+            background-color: $main-bright-color;
+
+            #{$page-footer}__icon {
+                fill: $main-dark-color;
+            }
+        }
+    }
+
+    &__icon {
+        height: $icon-height;
+        width: $icon-width;
+        fill: $gray-color-smooth;
+    }
+
+    &__copyright {
+        padding-top: vw_size(43);
+        font-size: 10px;
+        opacity: 0.4;
+    }
+}
