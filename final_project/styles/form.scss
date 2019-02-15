@@ -1,0 +1,43 @@
+@import'./variables.scss';
+
+.form {
+    display: flex;
+    flex-direction: column;
+
+
+    &__input,
+    &__textarea {
+        color: $bright-color-mid1;
+        background: transparent;
+        border: none;
+        border-bottom: 1px solid rgba($color: $main-light-color, $alpha: .6);
+        opacity: 0.6;
+        outline-color: $bright-color-mid1;
+
+        &::placeholder {
+            color: rgba($color: $main-light-color, $alpha: .6);
+            font-family: $main-font;
+        }
+    }
+
+    &__input {
+        padding-bottom: 15px;
+        padding-left: 5px;
+        margin-bottom: 30px;
+    }
+
+    &__button { 
+        width: 45%;
+        margin-top: vw_size(40);
+        padding-left: vw_size(37);
+        padding-right: vw_size(37);
+        background: $bright-color-mid1;
+    }
+
+    &__textarea {
+        min-width: 100%;
+        max-width: 100%;
+        min-height: vw_size(100);
+    }
+
+}
