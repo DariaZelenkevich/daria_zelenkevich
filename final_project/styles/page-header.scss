@@ -1,12 +1,19 @@
-@import './variables.scss';
+@import'./variables.scss';
 
 .page-header {
     background-color: $light-color;
+    position: sticky;
+    top: 0;
+    z-index: 3000;
 
     &__content {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding-top: vw_size(65);
+    }
+
+    &__menu {
+        height: 100%;
     }
 }
