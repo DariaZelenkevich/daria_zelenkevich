@@ -2,13 +2,15 @@
 
 .button {
     display: inline-block;
-    padding: vw_size(20);
+    padding: 20px;
     border: 1px solid transparent;
     border-radius: 2px;
-    font-family: $primiry-heading;
+    font-family: $primiry-heading-light;
     font-size: 13px;
-    font-weight: 700;
+    font-weight: bold;
     color: $main-dark-color;
     text-decoration: none;
     letter-spacing: 2.16px;
+    cursor: pointer;
+    transition: 300ms linear;    
 }
