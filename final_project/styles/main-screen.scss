@@ -10,14 +10,12 @@
     }
 
     &__greetings {
-        text-align: center;
         padding-bottom: vw_size(150);
     }
 
     &__greeting {
         display: block;
-        // z-index: 3000;
-        font: 33px/1 $primiry-heading;
+        font: 33px/1.2 $primiry-heading;
         color: $dark-color-lighter1;
         text-transform: uppercase;
         text-shadow: 4px 8px 10px rgba(0, 0, 0, 0.24);
@@ -36,15 +34,22 @@
         border: 1.5px solid rgba(0, 0, 0, 0.5);
         padding-left: vw_size(48);
         padding-right: vw_size(48);
+
+        &:hover {
+            background: $bright-color-lighter;
+            color: $gray-color;       
+        }
     }
 
     &__image{
         position: absolute;
         right: vw_size(270);
+        left: 75%;
         bottom: vw_size(137);
-        min-height: vw_size(90);
-        width: vw_size(75);
+        min-height: 90px;
+        max-width: 75px;
+        min-width: 75px;
         background: url('./../img/main_screen_image.png') no-repeat;
-        background-size: cover;
+        background-size: contain;
     }
 }
