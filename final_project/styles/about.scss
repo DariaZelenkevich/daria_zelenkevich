@@ -1,4 +1,4 @@
-@import './variables.scss';
+@import'./variables.scss';
 
 .about {
     padding: vw_size(129) 0 vw_size(110);
@@ -32,4 +32,23 @@
         }
     }
 
+    @include scale(768px) {
+        &__info {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__slider,
+        &__articles {
+            width: 100%;
+    
+        }
+
+        &__slider {
+            margin-bottom: vw_size(50);
+        }
+
+    }
+
 }
+
