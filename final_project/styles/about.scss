@@ -28,7 +28,7 @@
 
     &__article {
         & + & {
-            margin-top: vw_size(38);
+            margin-top: 40px;
         }
     }
 
@@ -46,6 +46,10 @@
 
         &__slider {
             margin-bottom: vw_size(50);
+        }
+
+        &__secondary-heading {
+            text-align: center;
         }
 
     }
