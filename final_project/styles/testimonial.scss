@@ -4,7 +4,16 @@
     $testimonial: &;
 
     &__heading {
-        padding-bottom: vw_size(23);       
+        padding-bottom: vw_size(23);
+        
+        &_primary {
+            padding-bottom: vw_size(30);
+            letter-spacing: 0.9px;
+        }
+    }
+
+    &__text {
+        line-height: 1.5;
     }
 
     &__author-post {
@@ -16,7 +25,7 @@
     }
 
     &__socials {
-       padding-top: vw_size(38); 
+        padding-top: vw_size(38); 
     }
 
     &__link {
@@ -32,8 +41,7 @@
             }
         }
     }
-
-    
+   
     &__rating {
         padding-top: vw_size(33);
     }
@@ -42,7 +50,5 @@
         width: $icon-width;
         height: $icon-height;
         opacity: 0.7;
-
-
     }
 }
