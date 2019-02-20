@@ -32,12 +32,24 @@
         padding-left: vw_size(37);
         padding-right: vw_size(37);
         background: $bright-color-mid1;
+
+        &:hover {
+            background: $gray-color;
+            color: $bright-color-lighter;
+            border:  1px solid $bright-color-mid1;  
+        }
     }
 
     &__textarea {
         min-width: 100%;
         max-width: 100%;
         min-height: vw_size(100);
+    }
+
+    @include scale(768px) {
+        &__button { 
+            width: 100%;
+        }
     }
 
 }
