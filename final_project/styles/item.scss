@@ -1,23 +1,21 @@
-@import './variables.scss';
+@import'./variables.scss';
 
 .item {
     $item: &;
 
     position: relative;
     display: inline-flex;
-    max-width: 56%;
-    margin-bottom: 15px;
 
-    // &:hover,
-    // &:focus {
-    //     #{$item}__preview{
-    //         display:  none;
-    //     }
+    &:hover,
+    &:focus {
+        #{$item}__preview{
+            display:  none;
+        }
         
-    //     #{$item}__info {
-    //         display: block;
-    //     }
-    // }
+        #{$item}__info {
+            display: block;
+        }
+    }
 
     &__image {
         max-width: 100%;
