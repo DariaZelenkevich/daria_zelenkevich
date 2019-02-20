@@ -8,4 +8,19 @@
         text-align: center;
         padding-bottom: vw_size(137);
     }
+
+    &__info {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__text-block {
+        display: flex;
+        justify-content: space-between;
+        letter-spacing: 0.96px;
+    }
+
+    &__controlers {
+        align-self: flex-end;
+    }
 }
