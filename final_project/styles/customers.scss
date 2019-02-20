@@ -4,16 +4,19 @@
 
     &__list {
         display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
+        flex-wrap: wrap;
+        justify-content: center;
 
         & + & {
             padding-top: vw_size(45);
         }
+    }
 
-        &_major {
-            padding-left: vw_size(300);
-            padding-right: vw_size(300);
+    &__label {
+        display: inline-flex;
+
+        & + & {
+            margin-left: vw_size(80);
         }
     }
 
