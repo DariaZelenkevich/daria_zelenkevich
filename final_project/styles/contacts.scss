@@ -1,7 +1,7 @@
 @import'./variables.scss';
 
 .contacts {
-    background: url('./../img/contact_background.jpg') no-repeat;
+    background: url('./../img/contact_background.jpg') center center no-repeat;
     background-size: contain;
     padding: vw_size(122) 0;
 
@@ -36,9 +36,22 @@
     }
 
     &__map {
-        height: vw_size(224);
+        height: 50%;
         width: 100%;
     }
 
+    @include scale(768px) {
+        &__content {
+            flex-direction:column; 
+        }
 
+        &__form,
+        &__info {
+            width: 100%;
+        }
+
+        &__form {
+            margin-bottom: 20px;
+        }
+    }
 }
