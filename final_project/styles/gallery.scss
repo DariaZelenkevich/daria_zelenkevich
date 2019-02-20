@@ -1,3 +1,5 @@
+@import'./variables.scss';
+
 .gallery {
     $gallery: &;
 
@@ -8,7 +10,8 @@
 
     &__item {
         position: relative;
-        width: 33%;
+        width: calc(33.33% - 15px);
+        margin-bottom: 15px;
 
         &:hover,
         &:focus {
@@ -26,6 +29,7 @@
     &__comment {
         display: none;
         position: absolute;
+        top: 35%;
         bottom: vw_size(15);
         right: vw_size(18);
         left: vw_size(18);
@@ -42,6 +46,22 @@
             border-width: 0 10px 20px 10px;
             border-color: transparent transparent #6DF6EB transparent;
             border-style: solid;
+        }
+    }
+
+    @include scale(850px) {
+        &__comment {
+            top: vw_size(15);
+            
+            &::before {
+                display: none;
+            }
+        } 
+    }
+
+    @include scale(768px) {
+        &__item {
+            width: calc(50% - 15px);
         }
     }
 }
