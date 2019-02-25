@@ -1,8 +1,12 @@
-@import './variables.scss';
+@import'./variables.scss';
 
 
 * {
     box-sizing: border-box;
+}
+
+.main-page {
+    scroll-behavior: smooth;
 }
 
 .container {
