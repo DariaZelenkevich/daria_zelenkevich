@@ -3,7 +3,7 @@
 .page-header {
     background-color: $light-color;
     position: sticky;
-    top: 0;
+    top: vw_size(-60);
     z-index: 3000;
 
     &__content {
