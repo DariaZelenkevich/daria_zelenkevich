@@ -1,4 +1,4 @@
-@import './variables.scss';
+@import'./variables.scss';
 
 .testimonials {
     padding: vw_size(139) 0 vw_size(121);
@@ -11,16 +11,67 @@
 
     &__info {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
+    }
+
+    &__image,
+    &__min-controlers {
+        width: calc(42% - 3.5vw)
+    }
+
+    &__max-controlers {
+        width: calc(50%);
     }
 
     &__text-block {
-        display: flex;
-        justify-content: space-between;
+        width: 58%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+
+    &__comment {
+        padding: 15% 13% 11%; 
+        background: $gray-color-lighter1;
+        border-radius: 3px;
+        text-align: center;
+        line-height: 1.2;
         letter-spacing: 0.96px;
     }
 
-    &__controlers {
-        align-self: flex-end;
+    &__min-controlers {
+        padding-top: vw_size(47);
     }
+
+    &__max-controlers {
+        text-align: right;
+    }
+
+    @include scale(768px) {
+        &__image,
+        &__text-block,
+        &__min-controlers,
+        &__max-controlers {
+            width: 100%;
+        }
+
+        &__image {
+            order: 0;
+        }
+
+        &__min-controlers {
+            order: 1;
+        }
+
+        &__text-block {
+            order: 2;
+        }
+
+        &__max-controlers {
+            order: 3;
+        }
+
+
+    }
+
 }
