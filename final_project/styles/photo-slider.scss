@@ -1,4 +1,4 @@
-@import './variables.scss';
+@import'./variables.scss';
 
 .photo-slider {
     text-align: center;
@@ -30,22 +30,5 @@
 
     &__controlers {
         padding: vw_size(43) 0 2px;
-        text-align: center;
-    }
-
-    &__controler {
-        display: inline-block;
-        width: 10px;
-        height: 10px;
-        background: $gray-color-mid;
-        border-radius: 3px;
-
-        & + & {
-            margin-left: 2px;
-        }
-
-        &_active {
-            background: $main-bright-color;
-        }
     }
 }
