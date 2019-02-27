@@ -33,8 +33,12 @@
         bottom: vw_size(15);
         right: vw_size(18);
         left: vw_size(18);
+        padding-top: vw_size(43);
+        padding-right:  15%;
+        padding-bottom: (50px + $icon-height);
+        padding-left: vw_size(38);
         background-color: $bright-color;
-        padding: vw_size(43) 15% vw_size(42) vw_size(38);
+
 
         &::before {
             content: '';
@@ -49,14 +53,49 @@
         }
     }
 
+    &__text {
+        overflow: auto;
+        max-height: 100%;
+    }
+
+    &__socials {
+        position: absolute;
+        bottom: 42px;
+    }
+
+    &__link {
+        text-decoration: none;
+
+        & + & {
+            margin-left: 12px;
+        }
+
+        &:hover {
+            #{$gallery}__icon {
+                fill: $dark-color-lighter2;
+            }
+        }
+    }
+
+    &__icon {
+        width: $icon-width;
+        height: $icon-height;
+        opacity: 0.7;
+    }
+
     @include scale(850px) {
         &__comment {
             top: vw_size(15);
+            padding-bottom: (30px + $icon-height);
             
             &::before {
                 display: none;
             }
         } 
+
+        &__socials {
+            bottom: 15px;
+        }
     }
 
     @include scale(768px) {
