@@ -32,6 +32,7 @@
         color: $main-dark-color;
         text-transform: uppercase;
         text-decoration: none;
+        transition: 400ms;
 
         &:hover {
             color: $gray-color; 
