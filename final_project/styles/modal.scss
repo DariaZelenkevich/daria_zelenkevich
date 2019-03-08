@@ -1,0 +1,49 @@
+@import'./variables.scss';
+
+.modal {
+    position: fixed;
+    display: none;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 4000;
+    background-color: rgba($color: $dark-color-lighter2, $alpha: .5);
+    overflow: auto;
+
+
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        margin: auto auto;
+        padding: 20px;
+        border-radius: 5px;
+        background-color: rgba($color: $dark-color-lighter1, $alpha: .9);
+    }
+
+    &__close-button {
+        margin-bottom: vw_size(20);
+        align-self: flex-end;
+        fill: $main-light-color;
+        transition: 300ms;
+
+        &:hover {
+            fill: $bright-color-lighter;
+        }
+    }
+
+
+    &__button {
+        margin-top: 20px;
+        color: $dark-color;
+        background-color: rgba($color: $bright-color-lighter, $alpha: .9);
+
+        &:hover {
+            background: $gray-color;
+            color: $bright-color-lighter;
+            border:  1px solid rgba($color: $bright-color-lighter, $alpha: .6);  
+        }
+    }
+}
+
