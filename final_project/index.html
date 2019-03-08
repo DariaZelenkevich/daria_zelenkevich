@@ -8,6 +8,29 @@
     <title>ShopNo</title>
 </head>
 <body class="main-page">
+    <div class="modal" id="modal">
+        <div class="modal__form">
+
+           <svg class="modal__close-button" id="modal_close_button" width="17" height="17" viewBox="0 0 17 17">
+                <defs>
+                    <path id="kmz7a" d="M218.973 3610.176l6.525 6.513 6.513-6.526 1.813 1.81-6.513 6.525 6.525 6.513-1.81 1.813-6.524-6.513-6.513 6.525-1.813-1.809 6.513-6.525-6.525-6.513z"/>
+                </defs>
+                <g>
+                    <g opacity=".4" transform="translate(-217 -3610)"><use xlink:href="#kmz7a"/></g>
+                </g>
+            </svg>
+
+            <form class="form" action="URL" method="post">
+                <input class="form__input" type="text" name="name" placeholder="Name*" required>
+                <input class="form__input" type="text" name="subject" placeholder="Subject*" required>
+                <input class="form__input" type="email" name="email" placeholder="E-mail*" required>
+                <textarea class="form__textarea" name="message" id="" cols="30" rows="10" placeholder="Massage*" required></textarea>
+                <input class="modal__button button" type="submit" value="SEND MESSAGE">
+            </form>
+
+        </div>
+
+    </div>
     <header class="page-header">
 
         <div class="page-header__content container">
@@ -49,7 +72,7 @@
                     <span class="main-screen__greeting"><span class="main-screen__greeting-highlight">Agency</span> CORPORATE SHOPNO Theme</span>
                 </div>
 
-                <a class="main-screen__button button" href="#">CONTACT US</a>
+                <div class="main-screen__button button" id="modal_open_button">CONTACT US</div>
 
                 <div class="main-screen__image"></div>
 
@@ -803,9 +826,9 @@
             <div class="contacts__content container">
 
                 <form class="contacts__form form" action="URL" method="post">
-                    <input class="form__input input" type="text" name="name" placeholder="Name*" required>
-                    <input class="form__input input" type="text" name="subject" placeholder="Subject*" required>
-                    <input class="form__input input" type="email" name="email" placeholder="E-mail*" required>
+                    <input class="form__input" type="text" name="name" placeholder="Name*" required>
+                    <input class="form__input" type="text" name="subject" placeholder="Subject*" required>
+                    <input class="form__input" type="email" name="email" placeholder="E-mail*" required>
                     <textarea class="form__textarea" name="message" id="" cols="30" rows="10" placeholder="Massage*" required></textarea>
                     <input class="form__button button" type="submit" value="SEND MESSAGE">
                 </form>
