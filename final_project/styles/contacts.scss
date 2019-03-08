@@ -20,6 +20,7 @@
     &__form {
         width: calc(60% - 30px);
         padding: vw_size(45) vw_size(33) vw_size(40);
+        color: rgba($color: $main-light-color, $alpha: .7);
     }
 
     &__info {
