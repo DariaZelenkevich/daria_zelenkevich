@@ -25,6 +25,7 @@
         padding: 6px 10px;
         background: rgba($color: $dark-color-smooth, $alpha: .4);
         text-decoration: none;
+        transition: 300ms;
 
         &:hover {
             background-color: $main-bright-color;
