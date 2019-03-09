@@ -88,5 +88,19 @@
         }
 
     }
+
+    @include scale(451px) {
+        &__preview {
+            padding-bottom: (25px + $item-link);
+        }
+    
+        &__info {
+            padding-bottom: (25px + $item-close-button);
+        }
+
+        &__nav {
+            bottom:25px;
+        }
+    }
     
 }
