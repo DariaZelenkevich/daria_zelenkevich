@@ -21,38 +21,38 @@ var servicesItem;
 for ( var j = 0; j < servicesItems.length; j++) {
   servicesItem = servicesItems[j];
 
-  var infoCards = servicesItem.getElementsByClassName("item__info");
-  var infoCard;
+  (function (item) {
+    var infoCards = item.getElementsByClassName("item__info");
+    var infoCard;
+  
+    var openCardLinks = item.getElementsByClassName("item__openlink");
+    var openCardLink;
+  
+    var closeCardLinks = item.getElementsByClassName("item__close-button");
+    var closeCardLink;   
+    
+    for (var m = 0; m < infoCards.length; m++) {
+      infoCard = infoCards[m];
 
-  var openCardLinks = servicesItem.getElementsByClassName("item__openlink");
-  var openCardLink;
-
-  var closeCardLinks = servicesItem.getElementsByClassName("item__close-button");
-  var closeCardLink;
-
-
-
-
-  for (var m = 0; m < infoCards.length; m++) {
-    infoCard = infoCards[m];
-
-    for ( var i = 0; i < openCardLinks.length; i++) {
+      for ( var i = 0; i < openCardLinks.length; i++) {
         openCardLink = openCardLinks[i];
         openCardLink.addEventListener('click', showInfoCard);
-    }
+      }
 
-    for ( var n = 0; n < closeCardLinks.length; n++) {
+      for ( var n = 0; n < closeCardLinks.length; n++) {
         closeCardLink = closeCardLinks[n];
         closeCardLink.addEventListener('click', hideInfoCard);
-        console.log('added ' + n);
+      }
     }
-  }
-}
 
-function hideInfoCard () {
-  infoCard.classList.add("invisible");
-}
+    function hideInfoCard () {
+      infoCard.classList.add("invisible");
+    }
 
-function showInfoCard () {
-  infoCard.classList.remove("invisible");
+    function showInfoCard () {
+      infoCard.classList.remove("invisible");
+    } 
+
+  })(servicesItem);
+
 }
