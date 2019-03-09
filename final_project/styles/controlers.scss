@@ -29,6 +29,8 @@
         background: $main-light-color;
         box-shadow: 3px 7px 11px rgba(20, 20, 21, 0.05);
         border-radius: 3px;
+        transition: 300ms;
+        cursor: pointer;
 
         & + & {
             margin-left: vw_size(30);
